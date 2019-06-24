@@ -43,6 +43,7 @@
 
               $('#rm').css('border-color', 'red');
              $('#senha').css('border-color', 'red');
+             alert(response);
 
 
 
