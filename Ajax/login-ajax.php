@@ -28,10 +28,37 @@ include('../conexao.php');
 
        else{
            
+            $consultadm = "SELECT * from tb_adm where nm_adm = '$rm' and senha_adm = '$senha'";
 
-       	echo 'RM e/ou senha incorreta(s).';
+            if(!$exeadm = $mysqli -> query($consultadm)){
+
+    echo $mysqli ->error;
+  }
+
+      
+      else{
+
+        if($exeadm -> num_rows > 0){
+ 
+        // Se existir, ir para a página inicial
+  
+
+          echo "location.href = 'inicial.php';";
+
        }
+
+       else{
+
+
+          echo 'RM e/ou senha incorreta(s).';
+         }
+
+       }
+
     }
+
+  }
+
 
 
 ?>

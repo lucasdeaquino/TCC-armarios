@@ -9,7 +9,7 @@ $turma = $_POST['turma'];
 $email = $_POST['email'];
 $telefone  = $_POST['telefone'];
 
- $insertaluno = "INSERT into tb_aluno values (null, '$nome', 'a.png', '$rm', '$email', null, '$turma', null, '$senha')";
+ $insertaluno = "INSERT into tb_aluno values (null, '$nome', 'a.png', '$rm', '$email', null, '$turma', '$senha')";
   if(!$exeinsert = $mysqli -> query($insertaluno)){
   	echo $mysqli ->error;
   }

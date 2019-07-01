@@ -70,6 +70,19 @@ jQuery("input.telefone")
 
 
     <script type="text/javascript">
+
+      $(document).on("input", "#senha", function () {
+    var limite = 8;
+    var caracteresDigitados = $(this).val().length;
+    var caracteresRestantes = limite - caracteresDigitados;
+
+    if(caracteresRestantes <= 8){
+
+      $('#senha').attr('oninvalid', 'setCustomValidity("A senha deve conter no mínimo 8 caracteres.")');
+
+    }
+
+});
 	
         	$(document).ready(function(){
   $("#enviar").click(function(){
