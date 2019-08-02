@@ -7,17 +7,69 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="Js/cadastro-functions.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
 	<title>Cadastro Aluno</title>
 </head>
 <body>
 
-  Nome: <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo"><br>
-   Senha: <input type="password" name="senha" id="senha" placeholder="Digite a sua senha"><br>
-    RM: &nbsp;&nbsp;&nbsp;<input type="text" maxlength="5" id="rm" onkeypress="return onlynumber();" placeholder="Digite seu RM"><br>
-  Turma: <select name="turma" id="turma">
+      <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+<br>
 
-	  <option>Selecionar</option>
-
+    <div class="row">
+    <form class="col s12" id="form">
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="nome">Nome completo</label>
+          <input id="nome" type="text" name="nome">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="senha">Senha:</label>
+          <input id="senha" type="password" name="senha">      
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="rm">RM:</label>
+          <input id="rm" type="text" id="RM">
+        </div>
+        </div>
+     <div class="row">
+        <div class="input-field col s12">
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email">
+        </div>
+      </div>
+         <div class="row">
+        <div class="input-field col s12">
+          <label for="telefone">Telefone:</label>
+          <input id="telefone" type="text" class="telefone">
+        </div>
+      </div>
+  <label for="turma">Selecione sua turma:</label>
+  <select class="browser-default">
+    <option value="" disabled selected>Escolha a sua turma</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+<br>
+<center><button class="btn waves-effect waves-light" type="button" name="enviar" id="enviar" value="cadastrar">Cadastar</button></center>
+  </div>
+    </form>
+</div>
 <?php
 
  include('conexao.php');
@@ -39,11 +91,7 @@
 ?>
 
 
-</select><br>
-
-Email : <input type="email" name="email" id="email"><br>
-Telefone: <input type="text" class="telefone" id="telefone" /><br>
-<input type="button" name="enviar" id="enviar" value="cadastrar">
+</select>
 
     <script type="text/javascript">
 	
@@ -98,3 +146,9 @@ jQuery("input.telefone")
  
 </body>
 </html>
+<style type="text/css">
+  
+  body{
+    background-color:#f5f5f5;
+  }
+</style>
