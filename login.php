@@ -14,12 +14,12 @@
      include('conexao.php');
       ?>
       <nav>
-        <img src="imagens/legal.png" width="80%">
+       <div id="legal"> <img src="imagens/legal1.png" width="80%" ><br><br></div>
   <form method="post">
 	 <input type="text" name="rm" id="rm" placeholder="coloque seu rm">
 	   <input type="password" name="senha" id="senha" placeholder="digite a sua senha">
-	 <input type="button" name="enviar" id="enviar" value="enviar">
-
+	 <input type="button" name="enviar" id="enviar" value="enviar" class="botao1">
+   
 	  <script type="text/javascript">
 	
         	$(document).ready(function(){
@@ -54,21 +54,35 @@
 </html>
 
 <style type="text/css">
-
 body{
   background-image:url("imagens/issoai.jpg");
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment:fixed;
 }
-
 nav{
-  background-color: white;
   margin-top:12%;
   margin-left:32%;
   width:40%; 
   height:400px;
   padding-left: 5%;
-  border-radius: 40px;
 }
+
+img{
+
+  border-radius: 50%;
+  border: 5px solid #3B638C;
+}
+
+.botao1{
+
+color: #2914A4;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+
+}
+
 </style>
