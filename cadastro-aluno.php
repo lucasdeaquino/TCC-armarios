@@ -13,63 +13,55 @@
 	<title>Cadastro Aluno</title>
 </head>
 <body>
-
-      <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Home</a></li>
-        <li><a href="badges.html">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
-<br>
-
-    <div class="row">
-    <form class="col s12" id="form">
+<div class="row">
+    <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <label for="nome">Nome completo</label>
-          <input id="nome" type="text" name="nome">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">Primeiro nome</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Sobrenome</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <label for="senha">Senha:</label>
-          <input id="senha" type="password" name="senha">      
+          <input id="password" type="password" class="validate">
+          <label for="password">Senha</label>
+        </div>
+      </div>
+            <div class="row">
+        <div class="input-field col s12">
+          <input id="rm" type="text" class="validate">
+          <label for="rm">RM</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <label for="rm">RM:</label>
-          <input id="rm" type="text" id="RM">
-        </div>
-        </div>
-     <div class="row">
-        <div class="input-field col s12">
-          <label for="email">Email:</label>
-          <input id="email" type="email" name="email">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
         </div>
       </div>
-         <div class="row">
+            <div class="row">
         <div class="input-field col s12">
-          <label for="telefone">Telefone:</label>
-          <input id="telefone" type="text" class="telefone">
+          <input id="telefone" type="text" class="validate">
+          <label for="telefone">Telefone</label>
         </div>
       </div>
-  <label for="turma">Selecione sua turma:</label>
+      <label for="turma">Selecione sua turma:</label>
   <select class="browser-default">
     <option value="" disabled selected>Escolha a sua turma</option>
     <option value="1">Option 1</option>
     <option value="2">Option 2</option>
     <option value="3">Option 3</option>
   </select>
-<br>
+  <br>
 <center><button class="btn waves-effect waves-light" type="button" name="enviar" id="enviar" value="cadastrar">Cadastar</button></center>
-  </div>
     </form>
-</div>
+  </div>
+
+
 <?php
 
  include('conexao.php');
@@ -146,9 +138,3 @@ jQuery("input.telefone")
  
 </body>
 </html>
-<style type="text/css">
-  
-  body{
-    background-color:#f5f5f5;
-  }
-</style>
