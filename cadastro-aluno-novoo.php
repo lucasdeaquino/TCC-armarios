@@ -13,12 +13,19 @@
 	<title>Cadastro Aluno</title>
 </head>
 <body>
+  <div id="fundo">
+  <br>
+  <div  class="z-depth-2">
+  <div id="cadastro">
+  <div id="logoo">
+         <center> <img id="logo" src="legal.png"></center>
+   </div>
 <div class="row">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
           <input id="first_name" type="text" class="validate">
-          <label for="first_name">Primeiro nome</label>
+          <label for="first_name">Nome</label>
         </div>
         <div class="input-field col s6">
           <input id="last_name" type="text" class="validate">
@@ -58,8 +65,12 @@
   </select>
   <br>
 <center><button class="btn waves-effect waves-light" type="button" name="enviar" id="enviar" value="cadastrar">Cadastar</button></center>
+<br>
     </form>
   </div>
+</div>
+</div>
+</div>
 
 
 <?php
@@ -110,19 +121,6 @@ jQuery("input.telefone")
 
 
     <script type="text/javascript">
-
-      $(document).on("input", "#senha", function () {
-    var limite = 8;
-    var caracteresDigitados = $(this).val().length;
-    var caracteresRestantes = limite - caracteresDigitados;
-
-    if(caracteresRestantes <= 8){
-
-      $('#senha').attr('oninvalid', 'setCustomValidity("A senha deve conter no mínimo 8 caracteres.")');
-
-    }
-
-});
 	
         	$(document).ready(function(){
   $("#enviar").click(function(){
@@ -151,3 +149,30 @@ jQuery("input.telefone")
  
 </body>
 </html>
+<style type="text/css">
+  
+  #logo{
+      height:200px;
+      width:200px; 
+  }
+
+  #fundo{
+      background-image: url("issoai.jpg");
+      background-repeat: no-repeat; 
+}
+
+  #cadastro{
+      width: 600px;
+      margin: 0 auto;
+      border-color: blue;
+      border-radius: 100px;
+      background-color: white;
+  }
+  .z-depth-2{
+      width: 700px;
+      margin: 0 auto;
+      border-radius: 10%;
+      background-color: white;
+  }
+
+</style>
