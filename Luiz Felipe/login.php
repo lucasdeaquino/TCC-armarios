@@ -17,14 +17,18 @@
      include('conexao.php');
       ?>
       <nav>
-       <div id="legal"> <img src="imagens/legal1.png" width="80%" ><br><br></div>
+  <div id="contorno"> <div id="daora"> <center> <div id="legal"> <img src="imagens/legal1.png" width="80%" ></center></div>
   <form method="post">
 	<div id="l"> <input type="text" name="rm" id="rm" placeholder="Coloque seu rm"><br><br>
 	   <input type="password" name="senha" id="senha" placeholder="Digite a sua senha"></div><br><br>
 	 <input type="button" name="enviar" id="enviar" value="enviar" class="botao1">
-  <div id="top"><a href="cadastro.php" id="le">Cadastre-se</a></div>
+  <div id="top"><a href="cadastro.php" id="le">Cadastre-se</a></div></div> </div> 
    
+   
+
 	  <script type="text/javascript">
+
+
 	
         	$(document).ready(function(){
   $("#enviar").click(function(){
@@ -49,6 +53,9 @@
      });
   });
 });
+
+    
+
 	   </script>
 	
   </form>
@@ -59,17 +66,29 @@
 
 <style type="text/css">
 
+#enviar{
+
+margin-left: 40%;
+
+}
+
+#contorno{
+  margin-right: 10%;
+  height: 100%;
+  border-radius: 40px 40px 40px 40px ;
+  background-color: white; 
+
+
+}
+
 #le{
 
-color:white;
+color:black;
 
 }
 
 body{
-  background-image:url("imagens/issoai.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-attachment:fixed;
+ background-image: linear-gradient( to right, #1E90FF ,#00BFFF, #87CEEB, #87CEFA );
 }
 nav{
   margin-top:12%;
@@ -81,11 +100,6 @@ nav{
 
 }
 
-img{
-
-  border-radius: 50%;
-  border: 5px solid #3B638C;
-}
 
 .botao1{
 
@@ -101,13 +115,13 @@ margin-left: 31%;
 }
 
 #l{
- 
-margin-left: 17%;
+margin-top: -25%;
+margin-left: 27%;
 
 }
 
 #top{
-margin-left: 28%;
+margin-left: 38%;
 margin-top: -16%;
 }
 
