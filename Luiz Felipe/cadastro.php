@@ -18,7 +18,7 @@
   <div  class="z-depth-2">
   <div id="cadastro">
   <div id="logoo">
-         <center> <img id="logo" src="legal.png"></center>
+         <center> <img id="legal" src="imagens/legal1.png"></center>
    </div>
 <div class="row">
     <form class="col s12">
@@ -62,9 +62,10 @@
     <option value="1">Option 1</option>
     <option value="2">Option 2</option>
     <option value="3">Option 3</option>
+
   </select>
   <br>
-<center><button class="btn waves-effect waves-light" type="button" name="enviar" id="enviar" value="cadastrar">Cadastar</button></center>
+<center><button class="btn waves-effect waves-light indigo darken-3" type="button" name="enviar" id="enviar" value="cadastrar">Cadastar</button></center>
 <br>
     </form>
   </div>
@@ -74,23 +75,18 @@
 
 
 <?php
-
  include('conexao.php');
-
   $consultarsala = "SELECT * from tb_turmas";
       if(!$exesala = $mysqli -> query($consultarsala)){
      	echo $myslqi -> error;
          }
    
-
      else{
-
      	while($rowsala = $exesala ->fetch_object()){
               
               echo "<option value = '$rowsala->cd_turmas'>$rowsala->nm_turmas</option>";
      	}
      }
-
 ?>
 
 
@@ -99,7 +95,6 @@
     <script type="text/javascript">
 	
 // Mascarando o campo Telefone
-
 jQuery("input.telefone")
         .mask("(99) 9999-9999?9")
         .focusout(function (event) {  
@@ -114,9 +109,6 @@ jQuery("input.telefone")
                 element.mask("(99) 9999-9999?9");  
             }  
         });
-
-
-
     </script>
 
 
@@ -126,41 +118,43 @@ jQuery("input.telefone")
   $("#enviar").click(function(){
     
      var dados = {'rm': $('#rm').val(), 'senha': $('#senha').val(), 'turma': $('#turma').val(), 'nome': $('#nome').val(), 'email': $('#email').val(), 'telefone': $('#telefone').val()};
-
      $.ajax({
       
-
       type: 'POST',
       url: 'Ajax/cadastro-aluno-ajax.php',
       data: dados, 
-
       success : function(response){
              
         alert(response);
       }
-
      });
   });
 });
-
-
 </script>
 
  
 </body>
 </html>
 <style type="text/css">
+
+/* label focus color */
+ .input-field input:focus + label {
+   color: blue !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid blue !important;
+   box-shadow: 0 1px 0 0 blue !important;
+
+   }
   
-  #logo{
-      height:200px;
-      width:200px; 
+  #legal{
+      height:100%;
+      width:70%;
   }
-
   #fundo{
-      background-image: url("issoai.jpg");
-      background-repeat: no-repeat; 
+      background-image: radial-gradient(circle, #E0EEEE, #C1CDCD,#838B8B);
 }
-
   #cadastro{
       width: 600px;
       margin: 0 auto;
@@ -174,5 +168,4 @@ jQuery("input.telefone")
       border-radius: 10%;
       background-color: white;
   }
-
 </style>

@@ -11,3 +11,4 @@ if(mysqli_connect_errno())
 	}
 	
 ?>
+© 2019 GitHub, Inc.
