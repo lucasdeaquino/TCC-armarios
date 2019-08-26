@@ -8,6 +8,18 @@
 	<title>inicial</title>
 </head>
 <body>
- 
+ <?php
+session_start();
+include('conexao.php');
+
+if(empty($_SESSION['id_aluno'])){
+
+header('location: login.php');
+}
+
+ ?>
+
+<a href="aluno-armario.php">COMPRAR ARMARIOS</a>
+
 </body>
 </html>

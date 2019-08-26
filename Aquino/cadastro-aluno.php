@@ -7,60 +7,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="Js/cadastro-functions.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
 	<title>Cadastro Aluno</title>
 </head>
 <body>
-<div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">Primeiro nome</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Sobrenome</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Senha</label>
-        </div>
-      </div>
-            <div class="row">
-        <div class="input-field col s12">
-          <input id="rm" type="text" class="validate">
-          <label for="rm">RM</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-            <div class="row">
-        <div class="input-field col s12">
-          <input id="telefone" type="text" class="validate">
-          <label for="telefone">Telefone</label>
-        </div>
-      </div>
-      <label for="turma">Selecione sua turma:</label>
-  <select class="browser-default">
-    <option value="" disabled selected>Escolha a sua turma</option>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-  </select>
-  <br>
-<center><button class="btn waves-effect waves-light" type="button" name="enviar" id="enviar" value="cadastrar">Cadastar</button></center>
-    </form>
-  </div>
 
+  Nome: <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo"><br>
+   Senha: <input type="password" name="senha" id="senha" placeholder="Digite a sua senha"><br>
+    RM: &nbsp;&nbsp;&nbsp;<input type="text" maxlength="5" id="rm" onkeypress="return onlynumber();" placeholder="Digite seu RM"><br>
+  Turma: <select name="turma" id="turma">
+
+	  <option>Selecionar</option>
 
 <?php
 
@@ -83,7 +39,12 @@
 ?>
 
 
-</select>
+</select><br>
+
+Email : <input type="email" name="email" id="email"><br>
+Telefone: <input type="text" class="telefone" id="telefone" /><br>
+<input type="button" name="enviar" id="enviar" value="cadastrar"><br>
+<a href="login.php">Fazer login</a>
 
     <script type="text/javascript">
 	
@@ -111,18 +72,7 @@ jQuery("input.telefone")
 
     <script type="text/javascript">
 
-      $(document).on("input", "#senha", function () {
-    var limite = 8;
-    var caracteresDigitados = $(this).val().length;
-    var caracteresRestantes = limite - caracteresDigitados;
 
-    if(caracteresRestantes <= 8){
-
-      $('#senha').attr('oninvalid', 'setCustomValidity("A senha deve conter no mínimo 8 caracteres.")');
-
-    }
-
-});
 	
         	$(document).ready(function(){
   $("#enviar").click(function(){
