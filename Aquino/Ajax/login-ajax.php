@@ -2,6 +2,8 @@
 
 include('../conexao.php');
 
+session_start();
+
 // Verificar se existe um usuário
 
   $rm = $_POST['rm'];
@@ -18,9 +20,10 @@ include('../conexao.php');
    else{
     
     if($exeuser -> num_rows > 0){
+      $row = $exeuser -> fetch_object();
  
         // Se existir, ir para a página inicial
-  
+             $_SESSION['id_aluno'] = $row ->cd_rm;
 
           echo "location.href = 'inicial.php';";
 
