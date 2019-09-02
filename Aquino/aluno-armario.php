@@ -24,7 +24,7 @@
    
    		   while($row = $exe_armarios -> fetch_object()){
 
-   		   	echo $row ->armario." ".$row ->tipo." ".$row ->status." <button name = 'compra' id= 'compra' value = ".$row->id.">Comprar</button><br>";
+   		   	echo $row ->armario." ".$row ->tipo." ".$row ->status." <button name = 'compra' id= 'compra' class = 'compra' value = ".$row->id.">Comprar</button><br>";
 
    		   }
 
@@ -103,7 +103,7 @@ if(selection == 0){
             
          
              
-       eval($(".meta").text(response));
+       eval($(".meta").html(response));
 
        
       }
@@ -113,9 +113,9 @@ if(selection == 0){
         }
      });
 
-     $("#compra").click(function(){
+     $(".compra").click(function(){
 
-       var armario = {'id': $("#compra").val()};
+       var armario = {'id': $(".compra").val()};
       $.ajax({
       
     
@@ -127,14 +127,39 @@ if(selection == 0){
             
          
              
-       eval($(".meta").text(response));
+       eval($(".meta").html(response));
 
        
       }
     
         });
      
-    });     
+    });
+
+ // Reservar
+
+    $("#reserva").click(function(){
+
+       var reserva = {'reserva': $(".reserva").val()};
+      $.ajax({
+      
+    
+      type: 'POST',
+      url: 'Ajax/reserva-armario-ajax.php',
+      data: reserva, 
+
+      success : function(response){
+            
+         
+             alert(response);
+       
+
+       
+      }
+    
+        });
+     
+    });      
   });
    
   
