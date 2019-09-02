@@ -21,7 +21,7 @@ echo "Nome: ".$row->nome." RM: ".$row->rm." Turma: ".$row->turma;
 
 //Consultando armário escolhido
 
-$info_armario = "SELECT  tb_armario.nm_armario as 'armario', tb_tipo_armario.ds_tipo as 'tipo', tb_tipo_armario.vl_armario as'valor' from tb_armario
+$info_armario = "SELECT  tb_armario.nm_armario as 'armario', tb_armario.cd_armario as 'cd', tb_tipo_armario.ds_tipo as 'tipo', tb_tipo_armario.vl_armario as'valor' from tb_armario
      inner join tb_tipo_armario on (tb_tipo_armario.cd_tipo_armario = tb_armario.id_tipo_armario)
      WHERE tb_armario.cd_armario = '$id' "
      ;
@@ -30,6 +30,6 @@ $info_armario = "SELECT  tb_armario.nm_armario as 'armario', tb_tipo_armario.ds_
 
   $row_armario = $exe_info_armario -> fetch_object();
 
-  echo " Armario: ".$row_armario->armario." Tipo: ".$row_armario->tipo." Valor: ".$row_armario->valor;
+  echo " Armario: ".$row_armario->armario." Tipo: ".$row_armario->tipo." Valor: ".$row_armario->valor." <button name='reserva' id='reserva' class = 'reserva' value = ".$row_armario->cd.">Reservar</button>";
  
 ?>
