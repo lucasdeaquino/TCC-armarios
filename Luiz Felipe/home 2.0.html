@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="estiloddw6.css" type="text/css">
+
+
+
+	<title></title>
+</head>
+<body>
+
+
+
+	<nav>
+    <div class="nav-wrapper black">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="badges.html">Comprar Armarios</a></li>
+        <li><a href="collapsible.html">Sobre</a></li>
+        <li><a href="mobile.html">FAQ</a></li>
+           <li><a href="sass.html">Contatos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
+     
+     <center> <img id="daora" src="imagens/legal.png"></center> 
+ </div>
+
+<div class="container">
+    <img src="imagens/armario.png" alt="Avatar" class="armario">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+
+<div class="container2">
+    <img src="imagens/lapis.png" alt="Avatar" class="lapis">
+  <div class="overlay2">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+
+<div class="container3">
+    <img src="imagens/user.png" alt="Avatar" class="user">
+  <div class="overlay3">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+
+
+</body>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+.container {
+  position: relative;
+  width: 20%;
+  height: 30%;
+  margin-left: 10%;
+}
+
+.armario{
+  border-radius: 40px 40px 40px 40px;
+  display: block;
+  width: 70%;
+  height: auto;
+  transition: 0.5s;
+
+}
+
+
+.overlay {
+
+ border-radius: 40px 40px 40px 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container2{
+  position: relative;
+  width: 20%;
+  height: 30%;
+  margin-left: 10%;
+}
+
+.lapis{
+  border-radius: 40px 40px 40px 40px;
+  display: block;
+  width: 70%;
+  height: auto;
+  transition: 0.5s;
+
+}
+
+
+.overlay2{
+
+ border-radius: 40px 40px 40px 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay2{
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container3{
+  position: relative;
+  width: 20%;
+  height: 30%;
+  margin-left: 10%;
+}
+
+.user{
+  border-radius: 40px 40px 40px 40px;
+  display: block;
+  width: 70%;
+  height: auto;
+  transition: 0.5s;
+
+}
+
+
+.overlay3{
+
+ border-radius: 40px 40px 40px 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay3{
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+body{
+ background-image: radial-gradient(circle, #E0EEEE, #C1CDCD,#838B8B);
+}
+	
+#armario{
+	margin-left: 5%;
+	border:solid 2px black;
+    border-radius: 40px 40px 40px 40px;
+	width: 200px;
+	transition: 0.5s;
+}
+#armario:hover{
+  width: 210px;
+}
+#lapis{
+	margin-left: 21%;
+	border:solid 2px black;
+    border-radius: 40px 40px 40px 40px;
+	width: 200px;
+	transition: 0.5s;
+}
+#lapis:hover{
+  width: 210px;
+}
+#user{
+	margin-left: 25%;
+	border:solid 2px black;
+    border-radius: 40px 40px 40px 40px;
+	width: 200px;
+	transition: 0.5s;
+}
+#user:hover{
+  width: 210px;
+}
+#daora{
+margin-top: -5%
+   
+}
+</style>
+
+
+
+
