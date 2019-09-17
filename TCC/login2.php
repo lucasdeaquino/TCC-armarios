@@ -88,7 +88,7 @@ jQuery("input.telefone")
       data: dados, 
       success : function(response){
              
-           if(response.trim() == "location.href = 'inicial.php';" ){
+           if(response.trim() == "location.href = 'home.php';" ){
              eval(response);
           }
 
