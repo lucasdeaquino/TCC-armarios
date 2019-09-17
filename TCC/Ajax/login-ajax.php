@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 include('../conexao.php');
 
@@ -25,7 +25,7 @@ session_start();
         // Se existir, ir para a página inicial
              $_SESSION['id_aluno'] = $row ->cd_rm;
 
-          echo "location.href = 'inicial.php';";
+          echo "location.href = 'home.php';";
 
        }
 
