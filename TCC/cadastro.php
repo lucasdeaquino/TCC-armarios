@@ -76,7 +76,11 @@
 
   </select>
   <br>
-<center><button class="btn waves-effect waves-light indigo darken-3" type="button" name="enviar" id="enviar" value="cadastrar">Cadastar</button></center>
+<center>
+<button class="btn waves-effect waves-light indigo darken-3" type="button" name="enviar" id="enviar" value="cadastrar">Cadastar</button>
+
+<a href="login2.php"><button class="btn waves-effect waves-light indigo darken-3" type="button">Voltar</button></a>
+</center>
 <br>
     </form>
   </div>
@@ -128,6 +132,7 @@ jQuery("input.telefone")
   });
 });
 </script>
+
 
  
 </body>
