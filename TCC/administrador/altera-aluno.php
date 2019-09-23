@@ -21,10 +21,10 @@
        
        $alterar = $_POST['alterar'];
 
-       if(empty($_SESSION['altera'])){
+       
           
           $_SESSION['altera'] = $alterar;
-       }
+       
        echo $_SESSION['altera'];
 
          $altera_sql = "SELECT tb_aluno.nm_aluno as 'nome', tb_aluno.cd_rm as 'rm', tb_aluno.ds_email as 'email', tb_aluno.ds_senha as 'senha', tb_turmas.nm_turmas as 'turma', tb_curso.nm_curso as 'curso', tb_turma_aluno.cd_turma_aluno as 'turmaluno' FROM tb_aluno
