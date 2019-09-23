@@ -1,31 +1,11 @@
-<!DOCTYPE html>
-<html>
+<?php
+	include('menu.php')
+ ?>
 <head>
 
-	<!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="estiloddw6.css" type="text/css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<title></title>
+	<title>Home</title>
 </head>
 <body>
-	<nav id="nav">
-    <div class="nav-wrapper indigo darken-4">
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="left hide-on-med-and-down">
-        <li><a id="menu" href="badges.html">Comprar Armarios</a></li>
-        <li><a id="menu" href="collapsible.html">Sobre</a></li>
-        <li><a id="menu" href="mobile.html">FAQ</a></li>
-           <li><a id="menu" href="sass.html">Contatos</a></li>
-      </ul>
-    </div>
-  </nav>
-
-
-     <center> <img id="daora" src="imagens/legal1.png"></center> 
-
 <div class="w3-container">
  
 </div>
@@ -74,28 +54,7 @@
 </div>
 <br><br><br><br><br><br><br><br><br><br>
 </body>
-<footer class="page-footer indigo darken-4">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer </h5>
-                <p class="grey-text text-lighten-4">dai a gente ve o que vai escrever aki.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">sei la</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">alguma coisa</a></li>
 
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">outra coisa</a>
-            </div>
-          </div>
-        </footer>
 <script>
 function currentDiv(n) {
   showDivs(slideIndex = n);
@@ -117,15 +76,12 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-opacity-off";
 }
 </script>
-
+<?php 
+	include('footer.php');
+?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
-#menu{
-transition: 0.5s;
-}
-#menu:hover{
- color:#6495ED;
-}
+
 .campo {
   position: relative;
   width: 20%;
@@ -228,15 +184,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#0
   text-align: center;
   font-family: Andale Mono, monospace;
 }
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: center;
-}
+
 #daora{
 margin-top: -5%
    
