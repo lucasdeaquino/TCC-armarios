@@ -17,6 +17,21 @@
 <meta charset="utf-8">
  </head>
     <body>
+      <nav id="nav">
+    <div class="nav-wrapper indigo darken-4">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a id="menu" href="badges.html">Comprar Armarios</a></li>
+        <li><a id="menu" href="collapsible.html">Sobre</a></li>
+        <li><a id="menu" href="mobile.html">FAQ</a></li>
+           <li><a id="menu" href="sass.html">Contatos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+     <center> <img id="daora" src="legal1.png"> </center> 
+
       <div class="container">
          
          <form action="altera-aluno.php" method="post">
@@ -80,4 +95,62 @@ AND tb_reserva.id_aluno2_reserva = tb_aluno.cd_rm )";
           
     </div>
    </body>
+   <footer class="page-footer indigo darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer </h5>
+                <p class="grey-text text-lighten-4">dai a gente ve o que vai escrever aki.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">sei la</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">alguma coisa</a></li>
+
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">outra coisa</a>
+            </div>
+          </div>
+        </footer>
+
  </html>
+ <style type="text/css">
+#menu{
+transition: 0.5s;
+}
+#menu:hover{
+ color:#6495ED;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+#daora{
+margin-top: -5%
+   
+}
+
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
+
+</style>
