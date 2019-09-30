@@ -1,5 +1,6 @@
 <?php
-	include('menu.php')
+	include('menu.php');
+  include('conexao.php');
  ?>
 <head>
 
@@ -7,14 +8,72 @@
 </head>
 <body>
 <div class="w3-container">
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<center><img src="imagens/legal1.png" id="daora"></center>
+
+<div id="balao4">
+
+            <div class="row">
+            <div class="col s12 m7">
+            <div class="card">
+            <div class="card-image">
+            </div>
+            <div class="card-content">
+            <p>Seja Bem Vindo ao ETEC LOCKER, um sistema novo no qual voce podera comprar seu armario de forma facil e pratica, facilitando a vida dos alunos e dos administradores da ETEC de Itanhaem.</p>
+            </div>
+            </div>
+            </div> 
+            </div>
+  
+</div>
+
  
 </div>
+
+<div id="lele">
+<center><div class="w3-content" style="max-width:800px">
+   <img class="mySlides" src="imagens/1.jpeg" style="width:100%;display:none"></a>
+   <img class="mySlides" src="imagens/2.jpeg" style="width:100%"></a>
+   <img class="mySlides" src="imagens/3.jpeg" style="width:100%;display:none"></a>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="imagens/1.jpeg"  style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="imagens/2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="imagens/3.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+       </div>
+            </div>
+                  </div>
+                         </center>
+
 
 <br><br><br><br><br><br><br><br><br><br>
 </div>
      </div>
 
-<center><img src="imagens/legal1.png" id="daora"></center>
+<div id="balao5">
+
+            <div class="row">
+            <div class="col s12 m7">
+            <div class="card">
+            <div class="card-image">
+            </div>
+            <div class="card-content">
+            <p>Abaixo voce confere algumas das opcoes que nosso sistema oferece, dentre elas comprar armarios, editar perfil, e verificar perfil, fique a vontade para navegar nas difercas opcoes oferecidas por nosso sistema .</p>
+            </div>
+            </div>
+            </div> 
+            </div>
+  
+</div>
+
+
 
 <div id="balao">
 
@@ -25,11 +84,10 @@
            <center> <img src="imagens/armario.png" id="armario"></center>
             </div>
             <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
+            <p>Caso voce nao tenha um armario, adiquira agora para seu maior conforto na escola.</p>
             </div>
            <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="aluno-armario.php">Comprar Armario</a>
             </div>
             </div>
             </div> 
@@ -46,11 +104,10 @@
            <center><img src="imagens/lapis.png" id="lapis"></center> 
             </div>
             <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
+            <p>Aqui voce pode editar o seu parfil para que ele fique de sua preferencia.</p>
             </div>
            <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Editar Perfil</a>
             </div>
             </div>
             </div> 
@@ -68,11 +125,10 @@
             <center><img src="imagens/user.png" id="user"></center>
             </div>
             <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
+            <p>Consulte seu pefil e veja seus status, e se precisa alterar alguma informacao.</p>
             </div>
            <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Consultar Perfil</a>
             </div>
             </div>
             </div> 
@@ -82,25 +138,8 @@
 
 <br><br><br>
 
-<div id="lele">
-<center><div class="w3-content" style="max-width:800px">
-   <img class="mySlides" src="imagens/leao1.jpg" style="width:100%;display:none"></a>
-   <img class="mySlides" src="imagens/leao2.jpg" style="width:100%"></a>
-   <img class="mySlides" src="imagens/leao3.jpg" style="width:100%;display:none"></a>
 
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="imagens/leao1.jpg"  style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="imagens/leao2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="imagens/leao3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
-       </div>
-            </div>
-                  </div>
-                         </center>
+
 
 </body>
 
@@ -130,6 +169,12 @@ function showDivs(n) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
 
+#balao5{
+  margin-top: -12%;
+  margin-left: 17%;
+  width:1500px;
+}
+
 #texto{
   font-size: 20px;
   transition: 1s;
@@ -157,21 +202,26 @@ margin-top: 22%;
 }
 
 #balao{
-
-  width: 700px;
+  margin-left: 0%;
+  width: 750px;
 }
 
 #balao2{
-  margin-top: -38%;
-  margin-left: 450px;
+  margin-top: -35%;
+  margin-left: 470px;
   width: 700px;
 }
 
 #balao3{
-  margin-left: 880px;
-  width: 750px;
-    margin-top: -33%;
-    height: 500px;
+  margin-left: 910px;
+  width: 720px;
+    margin-top: -29%;
+    height: 400px;
+}
+
+#balao4{
+
+  margin-left: 30%;
 }
 
 .campo {
@@ -239,10 +289,10 @@ background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#0
   margin-left: 75%;
   margin-top: -12%;
 }
-.user{
+#user{
   border-radius: 40px 40px 40px 40px;
   display: block;
-  width: 70%;
+  width: 50%;
   height: auto;
   transition: 0.5s;
 }
