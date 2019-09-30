@@ -25,15 +25,9 @@ $id_aluno = $_SESSION['altera'];
     $adm = $row_reserva->id_adm_res;
     $armario = $row_reserva->id_armario_reserva;
 
-     if($id_aluno == $row_reserva->id_aluno1_reserva){
-        
-        $id1 = $row_reserva->id_aluno2_reserva;
-     }           
+      $id1 = $row_reserva->id_aluno2_reserva;
 
-      else{
-
-        $id1 = $row_reserva->id_aluno1_reserva;
-      }
+    
 
       $delete_reserva = "DELETE FROM tb_reserva WHERE id_aluno1_reserva = '$id_aluno' or id_aluno2_reserva = '$id_aluno'";
       
@@ -66,15 +60,37 @@ $id_aluno = $_SESSION['altera'];
 }
    
    else{
-    $insert_reserva = "INSERT INTO tb_reserva VALUES( null,'$data', '$hora', '$rm', '$id1', '$adm', '$armario')";
-    if(!$exe_insert_reserva = $mysqli->query($insert_reserva)){
-      echo $mysqli->error;
-    }
+    if($id_aluno == $row_reserva->id_aluno1_reserva){
+
+         if($row_reserva->id_aluno2_reserva == null){
+
+           $insert_reserva = "INSERT INTO tb_reserva VALUES( null,'$data', '$hora', '$rm', null, null, '$armario')";
+
+             if(!$exe_insert_reserva = $mysqli->query($insert_reserva)){
+            echo $mysqli->error;
+          }
     else{
-  	echo 'Alterações realizadas com sucesso.';
+    echo 'Alterações realizadas com sucesso.';
 
     session_destroy();
    }
+         }
+           else{
+
+             
+               $insert_reserva = "INSERT INTO tb_reserva VALUES( null,'$data', '$hora', '$rm', $id1, null, '$armario')";
+                if(!$exe_insert_reserva = $mysqli->query($insert_reserva)){
+                  echo $mysqli->error;
+                    }
+
+                      else{
+                        echo 'Alterações realizadas com sucesso.';
+
+                        session_destroy();
+         }
+              
+    } 
+   }  
   }
  }
 }
