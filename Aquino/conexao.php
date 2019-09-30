@@ -1,7 +1,6 @@
 
 
 <?php
- header("Content-Type: text/html; charset=ISO-8859-1",true);
 
 $endereco = "localhost";
 $login = "root";
@@ -16,6 +15,10 @@ if(mysqli_connect_errno())
 	
 	}
 
+if (false === $mysqli->set_charset('utf8')) {
+    printf('Error ao usar utf8: %s', $mysqli->error);
+    exit;
+}
 	
 
 ?>
