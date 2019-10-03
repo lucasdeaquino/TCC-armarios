@@ -10,8 +10,7 @@
     <div class="nav-wrapper indigo darken-4">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
-       <img src="imagens/legal1.png" id="etec">
-        <li><a id="menu" href="home.php">Menu</a></li>
+            <li><a id="menu" href="home.php">Menu</a></li>
         <li><a id="menu" href="aluno-armario.php">Comprar Armarios</a></li>
         <li><a id="menu" href="sobre.php">Sobre</a></li>
         <li><a id="menu" href="faq.php">FAQ</a></li>

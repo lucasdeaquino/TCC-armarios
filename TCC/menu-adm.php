@@ -11,7 +11,6 @@
     <div class="nav-wrapper indigo darken-4">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
-        <img src="\imagens\legal1.png">
         <li><a id="menu" href="adm-inicial.php">Menu</a></li>
         <li><a id="menu" href="adm-aluno.php">Lista de Alunos</a></li>
         <li><a id="menu" href="armarios.php">Armários</a></li>

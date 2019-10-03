@@ -17,88 +17,109 @@
 
 
 
- <center><div id="balao">
-
-            <div class="row">
-            <div class="col s12 m7">
-            <div class="card">
-            <div class="card-image">	
-            </div>
-            <span class="card-title">Adimistrador</span>
-            <div class="card-content">
-            <p>Abaixo voce confere algumas das opcoes que nosso sistema oferece, dentre elas comprar armarios, editar perfil, e verificar perfil, fique a vontade para navegar nas difercas opcoes oferecidas por nosso sistema .</p>
-            </div>
-            </div>
-            </div> 
-            </div>
-  
+<div id="balao">
+<div class="col s12 m6">
+<div class="card blue-grey darken-1">
+<div class="card-content white-text">
+<span class="card-title">Card Title</span>
+<p>I am a very simple card. I am good at containing small bits of information.
+I am convenient because I require little markup to use effectively.</p>
+</div>
+<div class="card-action">
+</div>
+</div>
+</div>
 </div>
 
-</center>
+
 
 
 <div id="balao1">
-
-            <div class="row">
-            <div class="col s12 m7">
-            <div class="card">
-            <div class="card-image">
-          <center><i class="Large material-icons" >assignment_ind</i></center> 
-            </div>
-            <div class="card-content">
-            <p>Caso voce nao tenha um armario, adiquira agora para seu maior conforto na escola.</p>
-            </div>
-           <div class="card-action">
-          <a href="aluno-armario.php">Comprar Armario</a>
-            </div>
-            </div>
-            </div> 
-            </div>
-  
+<div class="col s12 m6">
+<div class="card blue-grey darken-1">
+<div class="card-content white-text">
+<span class="card-title">Card Title</span>
+<p>I am a very simple card. I am good at containing small bits of information.
+I am convenient because I require little markup to use effectively.</p>
 </div>
+<div class="card-action">
+</div>
+</div>
+</div>
+</div>
+
+
 
 
 <div id="balao2">
-
-            <div class="row">
-            <div class="col s12 m7">
-            <div class="card">
-            <div class="card-image">
-          <center><i class="Large material-icons" >assignment</i></center> 
-            </div>
-            <div class="card-content">
-            <p>Caso voce nao tenha um armario, adiquira agora para seu maior conforto na escola.</p>
-            </div>
-           <div class="card-action">
-          <a href="aluno-armario.php">Comprar Armario</a>
-            </div>
-            </div>
-            </div> 
-            </div>
-  
+<div class="col s12 m6">
+<div class="card blue-grey darken-1">
+<div class="card-content white-text">
+<span class="card-title">Card Title</span>
+<p>I am a very simple card. I am good at containing small bits of information.
+I am convenient because I require little markup to use effectively.</p>
 </div>
+<div class="card-action">
+</div>
+</div>
+</div>
+</div>
+  
+
 
 
 
 <div id="balao3">
-
-            <div class="row">
-            <div class="col s12 m7">
-            <div class="card">
-            <div class="card-image">
-          <center><i class="Large material-icons" >beenhere</i></center> 
-            </div>
-            <div class="card-content">
-            <p>Caso voce nao tenha um armario, adiquira agora para seu maior conforto na escola.</p>
-            </div>
-           <div class="card-action">
-          <a href="aluno-armario.php">Comprar Armario</a>
-            </div>
-            </div>
-            </div> 
-            </div>
-  
+<div class="col s12 m6">
+<div class="card blue-grey darken-1">
+<div class="card-content white-text">
+<span class="card-title">Card Title</span>
+<p>I am a very simple card. I am good at containing small bits of information.
+I am convenient because I require little markup to use effectively.</p>
 </div>
+<div class="card-action">
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="balao4">
+<div class="col s12 m6">
+<div class="card blue-grey darken-1">
+<div class="card-content white-text">
+<span class="card-title">Card Title</span>
+<p>I am a very simple card. I am good at containing small bits of information.
+I am convenient because I require little markup to use effectively.</p>
+</div>
+<div class="card-action">
+</div>
+</div>
+</div>
+</div>
+  
+
+
+
+<div id="balao5">
+<div class="col s12 m6">
+<div class="card blue-grey darken-1">
+<div class="card-content white-text">
+<span class="card-title">cu</span>
+<p>I am a very simple card. I am good at containing small bits of information.
+I am convenient because I require little markup to use effectively.</p>
+</div>
+<div class="card-action">
+</div>
+</div>
+</div>
+</div>
+
+
+
+
 
 
 <?php
@@ -109,28 +130,45 @@
 
 <style type="text/css">
 
+#balao{
+  margin-left: 3%;
+  width: 94%
+}
+
+
 #balao1{
-margin-top:-22%;
-  margin-left: 0%;
-  width: 750px;
+ margin-top: 5%;
+ width: 30%;
+ margin-left: 3%;
 }
 
 #balao2{
-margin-top: -22%;	
-  margin-left: 30%;
-  width: 750px;
+  margin-top: -13%;
+  margin-left: 67%;
+  width: 30%;
 }
+
 
 #balao3{
-	margin-top: -22%;
-  margin-left: 65%;
-  width: 750px;
+  margin-top: 5%;
+  width: 30%;
+  margin-left: 3%;
 }
 
-#balao{
-    
-	margin-right: -70%;
+#balao4{
+margin-top: -13%;
+width: 30%;
+margin-left: 67%;
 }
+
+#balao5{
+margin-top: -25%;
+margin-left:35%;
+width: 30%;
+height: 60%;
+
+}
+
 
 #daora{
 margin-top:-5%; 
