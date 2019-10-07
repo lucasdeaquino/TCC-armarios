@@ -17,20 +17,13 @@
 <meta charset="utf-8">
  </head>
     <body>
-      <nav id="nav">
-    <div class="nav-wrapper indigo darken-4">
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="left hide-on-med-and-down">
-        <li><a id="menu" href="badges.html">Comprar Armarios</a></li>
-        <li><a id="menu" href="collapsible.html">Sobre</a></li>
-        <li><a id="menu" href="mobile.html">FAQ</a></li>
-           <li><a id="menu" href="sass.html">Contatos</a></li>
-      </ul>
-    </div>
-  </nav>
+   
 
+<?php
+    include('menu-adm.php')
+?>
 
-     <center> <img id="daora" src="legal1.png"> </center> 
+ 
 
       <div class="container">
          

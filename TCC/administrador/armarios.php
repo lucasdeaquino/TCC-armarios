@@ -6,6 +6,11 @@
 </head>
 <body>
 
+	<?php
+    include('menu-adm.php')
+?>
+
+
  <?php
 
 include('../conexao.php');

@@ -11,6 +11,11 @@
 	<title>Cadastro Aluno</title>
 </head>
 <body>
+  <meta charset="utf-8">
+<?php
+    include('menu-adm.php')
+?>
+
 
   <?php
 
