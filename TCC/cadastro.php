@@ -79,7 +79,7 @@
 <center>
 <button class="btn waves-effect waves-light indigo darken-3" type="button" name="enviar" id="enviar" value="cadastrar">Cadastar</button>
 
-<a href="login2.php"><button class="btn waves-effect waves-light indigo darken-3" type="button">Voltar</button></a>
+<a href="login.php"><button class="btn waves-effect waves-light indigo darken-3" type="button">Voltar</button></a>
 </center>
 <br>
     </form>
