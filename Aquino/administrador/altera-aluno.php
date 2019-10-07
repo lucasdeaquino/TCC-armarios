@@ -21,15 +21,16 @@
        
        $alterar = $_POST['alterar'];
 
-       if(empty($_SESSION['altera'])){
+       
           
           $_SESSION['altera'] = $alterar;
-       }
+       
+       
 
          $altera_sql = "SELECT tb_aluno.nm_aluno as 'nome', tb_aluno.cd_rm as 'rm', tb_aluno.ds_email as 'email', tb_aluno.ds_senha as 'senha', tb_turmas.nm_turmas as 'turma', tb_curso.nm_curso as 'curso', tb_turma_aluno.cd_turma_aluno as 'turmaluno' FROM tb_aluno
    inner join tb_turma_aluno on (tb_aluno.cd_rm = tb_turma_aluno.id_rm)
    inner join tb_turmas on (tb_turmas.cd_turmas = tb_turma_aluno.id_turmas)
-   inner join tb_curso on (tb_curso.cd_curso = tb_turmas.id_curso) where cd_rm = '".$_SESSION['altera']."'";
+   inner join tb_curso on (tb_curso.cd_curso = tb_turmas.id_curso) where cd_rm = ".$_SESSION['altera']."";
          if(!$exe_altera = $mysqli -> query($altera_sql)){
              
              echo $mysqli -> error;
