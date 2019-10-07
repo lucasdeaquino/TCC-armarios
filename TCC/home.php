@@ -1,10 +1,10 @@
-</!DOCTYPE html>
+
 <html>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <head></head>
-
+<meta charset="utf-8">
 <body>
 
 
@@ -28,7 +28,7 @@ echo $_SESSION['nm_aluno']; ?>
 
 </span>
             <div class="card-content">
-            <p>Este È o Etec Locker, o sistema de locaÁ„o e gerenciamento de arm·rios da Etec de ItanhaÈm, aqui voce pode adquirir seu arm·rio de forma r·pida, f·cil e pr·tica.</p>
+            <p>Este √© o Etec Locker, o sistema de loca√ß√£o e gerenciamento de arm√°rios da Etec de Itanha√©m, aqui voce pode adquirir seu arm√°rio de forma r√°pida, f√°cil e pr√°tica.</p>
             </div>
             </div>
             </div> 
@@ -48,7 +48,7 @@ echo $_SESSION['nm_aluno']; ?>
           <center><i class="Large material-icons" >shopping_cart</i></center> 
             </div>
             <div class="card-content">
-            <p>Caso vocÍ n„o tenha um arm·rio, adquira agora o seu para um maior conforto na
+            <p>Caso voc√™ n√£o tenha um arm√°rio, adquira agora o seu para um maior conforto na
  escola.</p>
             </div>
            <div class="card-action">
@@ -70,7 +70,7 @@ echo $_SESSION['nm_aluno']; ?>
           <center><i class="Large material-icons" >create</i></center> 
             </div>
             <div class="card-content">
-            <p>Aqui vocÍ pode editar os dados do seu perfil caso ache nescess·rio.</p>
+            <p>Aqui voc√™ pode editar os dados do seu perfil caso ache nescess√°rio.</p>
             </div>
            <div class="card-action">
           <a href="aluno-armario.php">Editar Perfil</a>
@@ -105,38 +105,32 @@ echo $_SESSION['nm_aluno']; ?>
 
 <br><br><br><br>
 <?php
-    include('footer-adm.php')
+    include('footer.php')
 ?>
 
 
 
 <style type="text/css">
-
 #balao1{
 margin-top:-22%;
   margin-left: 0%;
   width: 750px;
 }
-
 #balao2{
 margin-top: -22%; 
   margin-left: 35%;
   width: 750px;
 }
-
 #balao3{
   margin-top: -22%;
   margin-left: 71%;
   width: 750px;
 }
-
 #balao{
     
   margin-right: -70%;
 }
-
-
-
 </style>
 </body>
 </html>
+

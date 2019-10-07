@@ -126,6 +126,10 @@ margin-left: 30%;
 margin-top: 2%;
 }
 
+#daora{
+
+	width: 0%;
+}
 
 
 </style>
