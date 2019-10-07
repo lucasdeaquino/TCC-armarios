@@ -13,9 +13,6 @@
     include('conexao.php');
 ?>
 
-<center><img src="imagens/legal1.png" id="daora"></center>
-
-
 
 
  <center><div id="balao">
@@ -25,9 +22,13 @@
             <div class="card">
             <div class="card-image">  
             </div>
-            <span class="card-title">Bem Vindos</span>
+            <span class="card-title">Bem Vindo 
+<?php session_start();
+echo $_SESSION['nm_aluno']; ?> 
+
+</span>
             <div class="card-content">
-            <p>Este e o Etec Locker, o sistema de compra e gerenciamento de armarios da Etec de Itanhaem, aqui voce pode adiquirir seu armario de forma rapida, facil e pratica.</p>
+            <p>Este é o Etec Locker, o sistema de locação e gerenciamento de armários da Etec de Itanhaém, aqui voce pode adquirir seu armário de forma rápida, fácil e prática.</p>
             </div>
             </div>
             </div> 
@@ -47,7 +48,8 @@
           <center><i class="Large material-icons" >shopping_cart</i></center> 
             </div>
             <div class="card-content">
-            <p>Caso voce nao tenha um armario, adiquira agora para seu maior conforto na escola.</p>
+            <p>Caso você não tenha um armário, adquira agora o seu para um maior conforto na
+ escola.</p>
             </div>
            <div class="card-action">
           <a href="aluno-armario.php">Comprar Armario</a>
@@ -68,7 +70,7 @@
           <center><i class="Large material-icons" >create</i></center> 
             </div>
             <div class="card-content">
-            <p>Aqui voce pode editar dados do seu perfil caso ache nescessario.</p>
+            <p>Aqui você pode editar os dados do seu perfil caso ache nescessário.</p>
             </div>
            <div class="card-action">
           <a href="aluno-armario.php">Editar Perfil</a>
@@ -90,7 +92,7 @@
           <center><i class="Large material-icons" >account_circle</i></center> 
             </div>
             <div class="card-content">
-            <p>Consulte o seu perfil para ver se algo precisa ser editado.</p>
+            <p>Consulte o seu perfil para saber se algo precisa ser editado.</p>
             </div>
            <div class="card-action">
           <a href="aluno-armario.php">Consultar Perfil</a>
@@ -133,18 +135,7 @@ margin-top: -22%;
   margin-right: -70%;
 }
 
-#daora{
-margin-top:-5%; 
-width: 30%;
-transition: 1s;
-}
 
-#daora:hover
-{
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-}
 
 </style>
 </body>
