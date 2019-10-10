@@ -105,7 +105,7 @@ echo $_SESSION['nm_aluno']; ?>
 
 <br><br><br><br>
 <?php
-    include('footer.php')
+    include('footer-adm.php')
 ?>
 
 

@@ -77,7 +77,7 @@
   </select>
   <br>
 <center>
-<button class="btn waves-effect waves-light indigo darken-3" type="button" name="enviar" id="enviar" value="cadastrar">Cadastar</button>
+<a href="login.php"><button class="btn waves-effect waves-light indigo darken-3" type="button" name="enviar" id="enviar" value="cadastrar" >Cadastar</button></a>
 
 <a href="login.php"><button class="btn waves-effect waves-light indigo darken-3" type="button">Voltar</button></a>
 </center>
@@ -163,7 +163,8 @@ jQuery("input.telefone")
       background-color: white;
   }
   .z-depth-2{
-      width: 700px;
+      width: 50%;
+      height: 75%;
       margin: 0 auto;
       border-radius: 10%;
       background-color: white;
