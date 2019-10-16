@@ -19,122 +19,86 @@
 
 
 <center>
-<div id="balao">
-<div class="col s12 m6">
-<div class="card blue-grey darken-1">
-<div class="card-content white-text">
-<span class="card-title">Administrador</span>
-<p>Olá Admisitrador, esta e a área feita pra você! aqui voce poderá organizar <br>e gerenciar o sistema de compra venda e reserva de armarios com práticidade e de forma rapida e segura ! .</p>
-</div>
-<div class="card-action">
-</div>
-</div>
-</div>
-</div>
+	<div id="balao">
+		<div class="row">	
+			<div class="col s12 m6">
+				<div class="card blue-grey darken-1">
+					<div class="card-content white-text">
+						<span class="card-title">Administrador</span>
+						<p>Olá Admisitrador, esta e a área feita pra você! aqui voce poderá organizar <br>e gerenciar o sistema de compra venda e reserva de armarios com práticidade e de forma rapida e segura ! .</p>
+					</div>
+					<div class="card-action"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="balao1">
+			<div class="row">	
+				<div class="col s6 m6">
+					<div class="card blue-grey darken-1">
+						<div class="card-content white-text">
+							<span class="card-title">Reservas</span>
+							<p>Veja as reservas de ármarios feitas pelos alunos e avilie se vai ser aprovada ou não.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">Ver Reservas</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s6 m6">
+					<div class="card blue-grey darken-1">
+						<div class="card-content white-text">
+							<span class="card-title">Armarios</span>
+							<p>Aqui voce pode ver a localização de cada ármario da Etec.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">Ver Armarios</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6 m6">
+					<div class="card blue-grey darken-1">
+						<div class="card-content white-text">
+							<span class="card-title">Cadastrar Adminstador</span>
+							<p>Cadastre um novo administrador de sua conficança para gerenciar o sistema também.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">Cadastrar Administrador</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s6 m6">
+					<div class="card blue-grey darken-1">
+						<div class="card-content white-text">
+							<span class="card-title">Lista de Alunos</span>
+							<p>Aqui você pode conferir a lista de alunos da escola para ter melhor controle.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">Ir para a lista</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </center>
-
-
-
-<div id="balao1">
-<div class="col s12 m6">
-<div class="card blue-grey darken-1">
-<div class="card-content white-text">
-<span class="card-title">Reservas</span>
-<p>Veja as reservas de ármarios feitas pelos alunos e avilie se vai ser aprovada ou não.</p>
-</div>
-<div class="card-action">
-<a href="#">Ver Reservas</a>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-<div id="balao2">
-<div class="col s12 m6">
-<div class="card blue-grey darken-1">
-<div class="card-content white-text">
-<span class="card-title">Armarios</span>
-<p>Aqui voce pode ver a localização de cada ármario da Etec.</p>
-</div>
-<div class="card-action">
-<a href="#">Ver Armarios</a>
-</div>
-</div>
-</div>
-</div>
-  
-
-
-
-
-<div id="balao3">
-<div class="col s12 m6">
-<div class="card blue-grey darken-1">
-<div class="card-content white-text">
-<span class="card-title">Cadastrar Adminstador</span>
-<p>Cadastre um novo administrador de sua conficança para gerenciar o sistema também.</p>
-</div>
-<div class="card-action">
-<a href="#">Cadastrar Administrador</a>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-<div id="balao4">
-<div class="col s12 m6">
-<div class="card blue-grey darken-1">
-<div class="card-content white-text">
-<span class="card-title">Lista de Alunos</span>
-<p>Aqui você pode conferir a lista de alunos da escola para ter melhor controle.</p>
-</div>
-<div class="card-action">
-<a href="#">Ir para a lista</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 
 <style type="text/css">
 
 #balao{
-  margin-left: 3%;
-  width: 94%
+  width: 50%;
 }
-
 
 #balao1{
- margin-top: 4%;
- width: 30%;
- margin-left: 18%;
-}
-
-#balao2{
-  margin-top: -15%;
-  margin-left: 50%;
-  width: 30%;
+  width: 70%;
 }
 
 
-#balao3{
-  margin-top: 4.5%;
-  width: 30%;
-  margin-left: 18%;
-}
 
-#balao4{
-margin-top: -15%;
-width: 30%;
-margin-left: 50%;
-}
 
 
 #daora{
@@ -147,7 +111,7 @@ transition: 1s;
 
 </style>
 <?php
-include('footer-adm.php');
+include('footer.php');
 ?>
 
 </body>
