@@ -63,7 +63,7 @@
       <?php
 
 
-    include('footer-adm.php');
+    include('../footer.php');
 ?>
 
     </body>

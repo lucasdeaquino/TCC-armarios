@@ -15,8 +15,6 @@
 
 
 <meta charset="utf-8">
-
-
  </head>
     <body>
    
@@ -82,20 +80,21 @@ AND tb_reserva.id_aluno2_reserva = tb_aluno.cd_rm )";
                   }
 
           ?>
-           
+       
+         
         
         </tbody>
       </table>
           
     </div>
    </body>
-
-<?php
-    include('footer-adm.php')
+  <?php
+    include('../footer.php')
 ?>
 
 
-<style type="text/css">
+ </html>
+ <style type="text/css">
 #menu{
 transition: 0.5s;
 }
@@ -130,7 +129,3 @@ margin-top: -5%
 
 
 </style>
-
- </html>
- 
-

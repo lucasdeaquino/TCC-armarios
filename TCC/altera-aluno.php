@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Alterar Aluno</title>
-	<meta charset="utf-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <title>Alterar Aluno</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
   <script src="../Js/cadastro-functions.js"></script>
  </head>
     <body>
@@ -16,17 +16,14 @@
        
         <?php
         session_start();
-
        include('../conexao.php');
        
        $alterar = $_POST['alterar'];
-
        
           
           $_SESSION['altera'] = $alterar;
        
-       echo $_SESSION['altera'];
-
+       
          $altera_sql = "SELECT tb_aluno.nm_aluno as 'nome', tb_aluno.cd_rm as 'rm', tb_aluno.ds_email as 'email', tb_aluno.ds_senha as 'senha', tb_turmas.nm_turmas as 'turma', tb_curso.nm_curso as 'curso', tb_turma_aluno.cd_turma_aluno as 'turmaluno' FROM tb_aluno
    inner join tb_turma_aluno on (tb_aluno.cd_rm = tb_turma_aluno.id_rm)
    inner join tb_turmas on (tb_turmas.cd_turmas = tb_turma_aluno.id_turmas)
@@ -35,17 +32,13 @@
              
              echo $mysqli -> error;
             }
-
             else{
          
               $row = $exe_altera -> fetch_object(); 
-
              echo $row ->nome.' '.$row ->rm.' '.$row ->email.' '.$row ->senha.' '.$row ->turma.' '.$row ->curso;
-
              $_SESSION['turma_aluno'] = $row ->turmaluno;
     
             }
-
         ?>
 
         <br><br>
@@ -55,26 +48,21 @@
     RM: &nbsp;&nbsp;&nbsp;<input type="text" maxlength="5" id="rm" onkeypress="return onlynumber();" placeholder="Digite seu RM"><br>
   Turma: <select name="turma" id="turma">
 
-  	 <option>Selecionar</option>
+     <option>Selecionar</option>
 
 <?php
-
  include('conexao.php');
-
   $consultarsala = "SELECT * from tb_turmas";
       if(!$exesala = $mysqli -> query($consultarsala)){
-     	echo $myslqi -> error;
+      echo $myslqi -> error;
          }
    
-
      else{
-
-     	while($rowsala = $exesala ->fetch_object()){
+      while($rowsala = $exesala ->fetch_object()){
               
               echo "<option value = '$rowsala->cd_turmas'>$rowsala->nm_turmas</option>";
-     	}
+      }
      }
-
 ?>
 
 
@@ -86,9 +74,8 @@ Telefone: <input type="text" class="telefone" id="telefone" /><br>
 <a href="login.php">Fazer login</a>
 
     <script type="text/javascript">
-	
+  
 // Mascarando o campo Telefone
-
 jQuery("input.telefone")
         .mask("(99) 9999-9999?9")
         .focusout(function (event) {  
@@ -103,32 +90,23 @@ jQuery("input.telefone")
                 element.mask("(99) 9999-9999?9");  
             }  
         });
-
-
-
     </script>
 
 <script type="text/javascript">
-
-
-	
-        	$(document).ready(function(){
+  
+          $(document).ready(function(){
   $("#enviar").click(function(){
     
      var dados = {'rm': $('#rm').val(), 'senha': $('#senha').val(), 'turma': $('#turma').val(), 'nome': $('#nome').val(), 'email': $('#email').val(), 'telefone': $('#telefone').val()};
-
      $.ajax({
       
-
       type: 'POST',
       url: '../Ajax/alterar-aluno-ajax.php',
       data: dados, 
-
       success : function(response){
              
         alert(response);
       }
-
      });
   });
 });

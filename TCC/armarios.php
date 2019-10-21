@@ -29,11 +29,5 @@ include('../conexao.php');
 
    ?>
 
-
-
 </body>
-   	<?php
-    include('footer-adm.php')
-?>
-
 </html>

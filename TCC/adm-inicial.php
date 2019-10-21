@@ -43,7 +43,7 @@
 							<p>Veja as reservas de ármarios feitas pelos alunos e avilie se vai ser aprovada ou não.</p>
 						</div>
 						<div class="card-action">
-							<a href="#">Ver Reservas</a>
+							<a href="adm-reservas.php">Ver Reservas</a>
 						</div>
 					</div>
 				</div>
@@ -54,7 +54,7 @@
 							<p>Aqui voce pode ver a localização de cada ármario da Etec.</p>
 						</div>
 						<div class="card-action">
-							<a href="#">Ver Armarios</a>
+							<a href="../aluno-armario.php">Ver Armarios</a>
 						</div>
 					</div>
 				</div>
@@ -67,7 +67,7 @@
 							<p>Cadastre um novo administrador de sua conficança para gerenciar o sistema também.</p>
 						</div>
 						<div class="card-action">
-							<a href="#">Cadastrar Administrador</a>
+							<a href="cadastro-adm.php">Cadastrar Administrador</a>
 						</div>
 					</div>
 				</div>
@@ -78,7 +78,7 @@
 							<p>Aqui você pode conferir a lista de alunos da escola para ter melhor controle.</p>
 						</div>
 						<div class="card-action">
-							<a href="#">Ir para a lista</a>
+							<a href="adm-aluno.php">Ir para a lista</a>
 						</div>
 					</div>
 				</div>
@@ -111,7 +111,7 @@ transition: 1s;
 
 </style>
 <?php
-include('footer.php');
+include('../footer.php');
 ?>
 
 </body>

@@ -15,7 +15,7 @@
         <li><a id="menu" href="adm-aluno.php">Lista de Alunos</a></li>
         <li><a id="menu" href="armarios.php">Armários</a></li>
         <li><a id="menu" href="adm-reservas.php">Reservas</a></li>
-        <li><a id="menu" href="cadastro-adm.php">Cadastrar Administrador</a></li>
+        <li><a id="menu" href="cadastro-adm.php">Cadastrar Administrador</a></li>       
       </ul>
     </div>
     </nav>
