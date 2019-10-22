@@ -1,10 +1,12 @@
-
+﻿
 <html>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<head></head>
-<meta charset="utf-8">
+<head>
+  <title>Etec Locker-Home</title>
+</head>
+
 <body>
 
 
