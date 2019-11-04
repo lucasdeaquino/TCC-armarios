@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#373435;stroke-width:100}
+    .str0 {stroke:#373435;stroke-width:200}
+    .str3 {stroke:#373435;stroke-width:25}
+    .str2 {stroke:#373435;stroke-width:20}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <rect x="6293" y="18806" width="1878" height="1958"/>
+   </clipPath>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="5207" y="8272" width="11423" height="13862"/>
+  <circle class="fil0 str1" cx="15669" cy="15969" r="592"/>
+  <line class="fil0 str2" x1="11525" y1="10868" x2="11143" y2= "10300" />
+  <line class="fil0 str2" x1="11526" y1="10854" x2="6319" y2= "10854" />
+  <line class="fil0 str2" x1="11509" y1="11618" x2="11127" y2= "11050" />
+  <line class="fil0 str2" x1="11510" y1="11604" x2="6303" y2= "11604" />
+  <line class="fil0 str2" x1="11509" y1="12408" x2="11127" y2= "11840" />
+  <line class="fil0 str2" x1="11510" y1="12394" x2="6303" y2= "12394" />
+  <line class="fil0 str2" x1="11525" y1="13078" x2="11143" y2= "12510" />
+  <line class="fil0 str2" x1="11526" y1="13064" x2="6319" y2= "13064" />
+  <line class="fil0 str2" x1="11509" y1="13828" x2="11127" y2= "13260" />
+  <line class="fil0 str2" x1="11510" y1="13814" x2="6303" y2= "13814" />
+  <line class="fil0 str2" x1="11509" y1="14618" x2="11127" y2= "14050" />
+  <line class="fil0 str2" x1="11510" y1="14604" x2="6303" y2= "14604" />
+  <g id="_808635088">
+  </g>
+  <g id="_808634992">
+  </g>
+  <g id="_808634896">
+  </g>
+  <g id="_808634800">
+  </g>
+  <g id="_808634704">
+  </g>
+  <g id="_808634608">
+  </g>
+  <g style="clip-path:url(#id0)">
+   <image x="6293" y="18806" width="1878" height="1958" xlink:href="teste1_Images\teste1_ImgID1.png"/>
+  </g>
+  <ellipse class="fil0 str3" cx="15676" cy="15957" rx="209" ry="392"/>
+  <line class="fil0 str3" x1="15687" y1="15802" x2="15687" y2= "16098" />
+ </g>
+</svg>
