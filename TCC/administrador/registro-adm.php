@@ -27,6 +27,13 @@ include('../conexao.php');
     
 
 <body>
+
+<?php 
+include('menu-adm.php');
+ 
+ ?>
+
+  
 <a href="#" id="geral">Geral</a>
 <a href="#"" id= "seu">Seus registros</a>
 <a href="#" id="aluno">Alunos</a>
