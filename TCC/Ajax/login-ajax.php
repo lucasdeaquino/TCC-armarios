@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 include('../conexao.php');
 
@@ -24,9 +24,10 @@ session_start();
  
         // Se existir, ir para a página inicial
              $_SESSION['id_aluno'] = $row ->cd_rm;
-  $_SESSION['nm_aluno'] = $row ->nm_aluno;
+              $_SESSION['nm_aluno'] = $row ->cd_rm;
 
-          echo "location.href = 'home.php';";
+
+          echo "location.href = 'inicial.php';";
 
        }
 
@@ -45,8 +46,11 @@ session_start();
       else{
 
         if($exeadm -> num_rows > 0){
+          $row2 = $exeadm -> fetch_object();
  
         // Se existir, ir para a página inicial de administrador
+          $_SESSION['id_adm'] = $row2->cd_adm;
+          $_SESSION['nm_adm'] = $row2->nm_adm;
   
 
           echo "location.href = 'administrador/adm-inicial.php';";
