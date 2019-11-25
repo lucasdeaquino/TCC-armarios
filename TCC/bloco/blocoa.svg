@@ -48,41 +48,32 @@ viewBox="0 0 1056 1377"
  </defs>
  <g id="Camada_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <rect class="fil0 str0" x="1" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="217" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="1" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="217" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="1" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="217" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="1" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="217" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="431" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="431" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="431" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="431" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="17" x="1" y="205" width="187" height="277"/>
+  <rect class="blocos" id="13" x="217" y="205" width="187" height="277"/>
+  <rect class="blocos" id="18" x="1" y="501" width="187" height="277"/>
+  <rect class="blocos" id="14" x="217" y="501" width="187" height="277"/>
+  <rect class="blocos" id="19" x="1" y="802" width="187" height="277"/>
+  <rect class="blocos" id="15" x="217" y="802" width="187" height="277"/>
+  <rect class="blocos" id="20" x="1" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="16" x="217" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="9" x="431" y="205" width="187" height="277"/>
+  <rect class="blocos" id="5" x="644" y="205" width="187" height="277"/>
+  <rect class="blocos" id="10" x="431" y="501" width="187" height="277"/>
+  <rect class="blocos" id="6" x="644" y="501" width="187" height="277"/>
+  <rect class="blocos" id="11" x="431" y="802" width="187" height="277"/>
+  <rect class="blocos" id="7" x="644" y="802" width="187" height="277"/>
+  <rect class="blocos" id="12" x="431" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="8" x="644" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="1" x="859" y="205" width="187" height="277"/>
+  <rect class="blocos" id="2" x="859" y="501" width="187" height="277"/>
+  <rect class="blocos" id="3" x="859" y="802" width="187" height="277"/>
+  <rect class="blocos" id="4" x="859" y="1099" width="187" height="277"/>
   <rect class="fil1 str0" x="1" y="1" width="1054" height="158"/>
   <text x="83" y="115"  class="fil2 fnt0">Bloco A - Pequeno</text>
-  <text x="873" y="401"  class="fil2 fnt1">01</text>
-  <text x="861" y="999"  class="fil2 fnt1">03</text>
-  <text x="861" y="1296"  class="fil2 fnt1">04</text>
-  <text x="646" y="698"  class="fil2 fnt1">06</text>
-  <text x="646" y="999"  class="fil2 fnt1">07</text>
-  <text x="646" y="1296"  class="fil2 fnt1">08</text>
-  <rect class="fil0 str0" x="644" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="1099" width="187" height="277"/>
-  <text x="874" y="382"  class="fil2 fnt2">0</text>
-  <text x="931" y="382"  class="fil2 fnt2">01</text>
+  
+
+ 
+  <text x="866" y="382"  class="fil2 fnt2">001</text>
   <text x="653" y="379"  class="fil2 fnt2">005</text>
   <text x="9" y="1274"  class="fil2 fnt2">020</text>
   <text x="9" y="977"  class="fil2 fnt2">0</text>
