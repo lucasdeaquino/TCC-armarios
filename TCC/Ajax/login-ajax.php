@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 include('../conexao.php');
 
@@ -27,7 +27,7 @@ session_start();
               $_SESSION['nm_aluno'] = $row ->cd_rm;
 
 
-          echo "location.href = 'inicial.php';";
+          echo "location.href = 'home.php';";
 
        }
 
