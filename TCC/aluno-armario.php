@@ -1,10 +1,51 @@
-<?php
-  include('menu.php');
+﻿<?php
+    include('menu.php');
+
 ?>
+
 <head>
 	<title>Comprar Armários</title>
+<meta charset="utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
  </head>
 <body>
+  <script type="text/javascript">
+    
+    $(document).ready(function(){
+    $('.tabs').tabs();
+  });
+  </script>
+
+  <div class="menu-bloco">
+    <ul class="tabs">
+    <li class="tab col s3 a"><a href="#">Bloca A</a></li>
+    <li class="tab col s3 b"><a href="#">Bloca B</a></li>
+    <li class="tab col s3 c"><a href="#">Bloca C</a></li>
+    <li class="tab col s3 d"><a href="#">Bloca D</a></li>
+    <li class="tab col s3 e"><a href="#">Bloca E</a></li>
+    <li class="tab col s3 f"><a href="#">Bloca F</a></li>
+    <li class="tab col s3 g"><a href="#">Bloca G</a></li>
+    <li class="tab col s3 h"><a href="#">Bloca H</a></li>
+    <li class="tab col s3 i"><a href="#">Bloca I</a></li>
+    <li class="tab col s3 j"><a href="#">Bloca J</a></li>
+    <li class="tab col s3 k"><a href="#">Bloca K</a></li>
+    <li class="tab col s3 l"><a href="#">Bloca L</a></li>
+    <li class="tab col s3 m"><a href="#">Bloca M</a></li>
+    <li class="tab col s3 n"><a href="#">Bloca N</a></li>
+    <li class="tab col s3 o"><a href="#">Bloca O</a></li>
+    <li class="tab col s3 p"><a href="#">Bloca P</a></li>
+    <li class="tab col s3 q"><a href="#">Bloca Q</a></li>
+    <li class="tab col s3 r"><a href="#">Bloca R</a></li>
+    </ul>
+  </div>
 <div class="meta">
 	<?php
   session_start();
@@ -13,166 +54,160 @@
    header('location: login.php');
   }
     include('conexao.php');
-   
-  		  	$select_armarios = "SELECT tb_armario.nm_armario as 'armario', tb_tipo_armario.ds_tipo as 'tipo', tb_status.ds_status as 'status', tb_armario.cd_armario as 'id' from tb_armario
-  		  	inner join tb_tipo_armario on (tb_tipo_armario.cd_tipo_armario = tb_armario.id_tipo_armario)
-  		  	inner join tb_status on (tb_status.cd_status = tb_armario.id_status)";
-
-  		  	$exe_armarios = $mysqli -> query($select_armarios);
-   
-   		   while($row = $exe_armarios -> fetch_object()){
-
-   		   	echo $row ->armario." ".$row ->tipo." ".$row ->status." <button name = 'compra' id= 'compra' class = 'compra' value = ".$row->id.">Comprar</button><br>";
-
-   		   }
-
+  
 	?>
   </div>
+<script>
+          $(document).ready(function(){
+            $('.a').click(function(){
+          $('.meta').empty();
 
-  <select name="status" id="selecionar" class="selecionar">
-    <option>Selecionar</option>
-   <?php
-  
-      $escolher_status = "SELECT * FROM tb_status";
-        $exe_status = $mysqli-> query($escolher_status);
-        while($row_status= $exe_status -> fetch_object()){
-         
-          echo "<option value =".$row_status->cd_status.">".$row_status ->ds_status."</option>";
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocoa.svg"></object></center>';
 
-        }
+          eval($('.meta').html(bloco));
 
-   ?> 
+     });
+             $('.b').click(function(){
+          $('.meta').empty();
 
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocob.svg"></object></center>';
 
+          eval($('.meta').html(bloco));
 
-  </select>
-
-
-
-
-
-
-
-<script type="text/javascript">
-   $(document).ready(function(){
-    $(".selecionar").click(function(){
-    
-
-    
-   
-var selection = $(".selecionar option:selected");
-
-if(selection.val() == 1){
-
-  $(".meta").empty();
-  selection = 0;
-
-
-}
-
-else if(selection.val() == 2){
-
-  $(".meta").empty();
-  selection = 0;
-
-}
-  
-  else if(selection.val() == 3){
-
-  $(".meta").empty();
-  selection = 0;
-  
-
-}
-
-if(selection == 0){
-
-
-
- var dados = {'op': $(".selecionar option:selected").val()};
-      $.ajax({
-      
-    
-      type: 'POST',
-      url: 'Ajax/aluno-armario-ajax.php',
-      data: dados, 
-
-      success : function(response){
-            
-         
-             
-       eval($(".meta").html(response));
-
-       
-      }
-    
-        });
-
-        }
      });
 
-     $(".compra").click(function(){
-      
-       
-      var exibir = $(this);
+       $('.c').click(function(){
+          $('.meta').empty();
 
-       var armario = {'id': $(this).val()};
-      $.ajax({
-      
-    
-      type: 'POST',
-      url: 'Ajax/compra-armario-ajax.php',
-      data: armario, 
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blococ.svg"></object></center>';
 
-      success : function(response){
-            
-         
-         $(".meta").empty();
+          eval($('.meta').html(bloco));
 
+     });
+      $('.d').click(function(){
+          $('.meta').empty();
 
-            $(".meta").html(exibir);
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocod.svg"></object></center>';
 
+          eval($('.meta').html(bloco));
 
-         eval($(".meta").prepend(response));
+     });
+      $('.e').click(function(){
+          $('.meta').empty();
 
-         $(".selecionar").remove();
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocoe.svg"></object></center>';
 
+          eval($('.meta').html(bloco));
 
-         $(".compra").click(function(){
+     });
+      $('.f').click(function(){
+          $('.meta').empty();
 
-       var reserva = {'reserva': $(this).val(), 'dividir': $('.dividir option:selected').val()};
-      $.ajax({
-      
-    
-      type: 'POST',
-      url: 'Ajax/reserva-armario-ajax.php',
-      data: reserva, 
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocof.svg"></object></center>';
 
-      success : function(response){
-            
-         
-             alert(response);
-       
+          eval($('.meta').html(bloco));
 
-       
-                       }
-    
-                 });
-     
-              }); 
-       
-            }
-    
-        });
-           
-      });
-      
+     });
+      $('.g').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocog.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
+      $('.h').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocoh.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
+      $('.i').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocoi.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
+      $('.j').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocoj.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
+      $('.k').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocok.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
+      $('.l').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocol.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });       
+       $('.m').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocom.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
+        $('.n').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocon.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
+         $('.o').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocoo.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
+          $('.p').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocop.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
+           $('.q').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocoq.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
+            $('.r').click(function(){
+          $('.meta').empty();
+
+          var bloco = '<center><object type="image/svg+xml" data="bloco/blocor.svg"></object></center>';
+
+          eval($('.meta').html(bloco));
+
+     });
   });
-   
-  
-   </script>
-
+</script>
 </body>
-<?php 
-  include('footer.php');
+<?php
+    include('footer.php');
+
 ?>
