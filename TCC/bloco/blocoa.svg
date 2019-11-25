@@ -69,63 +69,29 @@ viewBox="0 0 1056 1377"
   <rect class="blocos" id="3" x="859" y="802" width="187" height="277"/>
   <rect class="blocos" id="4" x="859" y="1099" width="187" height="277"/>
   <rect class="fil1 str0" x="1" y="1" width="1054" height="158"/>
+  
   <text x="83" y="115"  class="fil2 fnt0">Bloco A - Pequeno</text>
   
-
- 
   <text x="866" y="382"  class="fil2 fnt2">001</text>
   <text x="653" y="379"  class="fil2 fnt2">005</text>
   <text x="9" y="1274"  class="fil2 fnt2">020</text>
-  <text x="9" y="977"  class="fil2 fnt2">0</text>
-  <text x="123" y="977"  class="fil2 fnt2">9</text>
-  <text x="66" y="977"  class="fil2 fnt2">1</text>
-  <text x="9" y="676"  class="fil2 fnt2">0</text>
-  <text x="123" y="676"  class="fil2 fnt2">8</text>
-  <text x="66" y="676"  class="fil2 fnt2">1</text>
-  <text x="9" y="379"  class="fil2 fnt2">0</text>
-  <text x="123" y="379"  class="fil2 fnt2">7</text>
-  <text x="66" y="379"  class="fil2 fnt2">1</text>
-  <text x="225" y="1274"  class="fil2 fnt2">0</text>
-  <text x="339" y="1274"  class="fil2 fnt2">6</text>
-  <text x="282" y="1274"  class="fil2 fnt2">1</text>
-  <text x="224" y="977"  class="fil2 fnt2">0</text>
-  <text x="338" y="977"  class="fil2 fnt2">5</text>
-  <text x="281" y="977"  class="fil2 fnt2">1</text>
-  <text x="225" y="676"  class="fil2 fnt2">0</text>
-  <text x="339" y="676"  class="fil2 fnt2">4</text>
-  <text x="282" y="676"  class="fil2 fnt2">1</text>
-  <text x="225" y="379"  class="fil2 fnt2">0</text>
-  <text x="339" y="379"  class="fil2 fnt2">3</text>
-  <text x="282" y="379"  class="fil2 fnt2">1</text>
-  <text x="439" y="1274"  class="fil2 fnt2">0</text>
-  <text x="553" y="1274"  class="fil2 fnt2">2</text>
-  <text x="496" y="1274"  class="fil2 fnt2">1</text>
-  <text x="446" y="977"  class="fil2 fnt2">0</text>
-  <text x="560" y="977"  class="fil2 fnt2">1</text>
-  <text x="503" y="977"  class="fil2 fnt2">1</text>
-  <text x="439" y="676"  class="fil2 fnt2">0</text>
-  <text x="553" y="676"  class="fil2 fnt2">0</text>
-  <text x="496" y="676"  class="fil2 fnt2">1</text>
-  <text x="439" y="379"  class="fil2 fnt2">0</text>
-  <text x="553" y="379"  class="fil2 fnt2">9</text>
-  <text x="496" y="379"  class="fil2 fnt2">0</text>
-  <text x="652" y="1274"  class="fil2 fnt2">0</text>
-  <text x="766" y="1274"  class="fil2 fnt2">8</text>
-  <text x="709" y="1274"  class="fil2 fnt2">0</text>
-  <text x="652" y="977"  class="fil2 fnt2">0</text>
-  <text x="766" y="977"  class="fil2 fnt2">7</text>
-  <text x="709" y="977"  class="fil2 fnt2">0</text>
-  <text x="652" y="676"  class="fil2 fnt2">0</text>
-  <text x="766" y="676"  class="fil2 fnt2">6</text>
-  <text x="709" y="676"  class="fil2 fnt2">0</text>
-  <text x="867" y="1274"  class="fil2 fnt2">0</text>
-  <text x="981" y="1274"  class="fil2 fnt2">4</text>
-  <text x="924" y="1274"  class="fil2 fnt2">0</text>
-  <text x="874" y="977"  class="fil2 fnt2">0</text>
-  <text x="988" y="977"  class="fil2 fnt2">3</text>
-  <text x="931" y="977"  class="fil2 fnt2">0</text>
-  <text x="868" y="676"  class="fil2 fnt2">0</text>
-  <text x="982" y="676"  class="fil2 fnt2">2</text>
-  <text x="925" y="676"  class="fil2 fnt2">0</text>
+  <text x="9" y="977"  class="fil2 fnt2">019</text>
+  <text x="9" y="676"  class="fil2 fnt2">018</text>
+  <text x="9" y="379"  class="fil2 fnt2">017</text>
+  <text x="225" y="1274"  class="fil2 fnt2">016</text>
+  <text x="224" y="977"  class="fil2 fnt2">015</text>
+  <text x="225" y="676"  class="fil2 fnt2">014</text>
+  <text x="225" y="379"  class="fil2 fnt2">013</text>
+  <text x="439" y="1274"  class="fil2 fnt2">012</text>
+  <text x="446" y="977"  class="fil2 fnt2">011</text>
+  <text x="439" y="676"  class="fil2 fnt2">010</text>
+  <text x="439" y="379"  class="fil2 fnt2">009</text>
+  <text x="652" y="1274"  class="fil2 fnt2">008</text>
+  <text x="652" y="977"  class="fil2 fnt2">007</text>
+  <text x="652" y="676"  class="fil2 fnt2">006</text>
+  <text x="867" y="1274"  class="fil2 fnt2">004</text>
+  <text x="874" y="977"  class="fil2 fnt2">003</text>
+  <text x="868" y="676"  class="fil2 fnt2">002</text>
+
  </g>
 </svg>
