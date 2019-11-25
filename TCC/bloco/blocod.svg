@@ -48,39 +48,30 @@ viewBox="0 0 1056 1377"
  </defs>
  <g id="Camada_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <rect class="fil0 str0" x="1" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="217" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="1" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="217" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="1" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="217" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="1" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="217" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="431" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="431" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="431" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="431" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="65" x="1" y="205" width="187" height="277"/>
+  <rect class="blocos" id="61" x="217" y="205" width="187" height="277"/>
+  <rect class="blocos" id="66" x="1" y="501" width="187" height="277"/>
+  <rect class="blocos" id="62" x="217" y="501" width="187" height="277"/>
+  <rect class="blocos" id="67" x="1" y="802" width="187" height="277"/>
+  <rect class="blocos" id="63" x="217" y="802" width="187" height="277"/>
+  <rect class="blocos" id="68" x="1" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="64" x="217" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="57" x="431" y="205" width="187" height="277"/>
+  <rect class="blocos" id="53" x="644" y="205" width="187" height="277"/>
+  <rect class="blocos" id="58" x="431" y="501" width="187" height="277"/>
+  <rect class="blocos" id="54" x="644" y="501" width="187" height="277"/>
+  <rect class="blocos" id="59" x="431" y="802" width="187" height="277"/>
+  <rect class="blocos" id="55" x="644" y="802" width="187" height="277"/>
+  <rect class="blocos" id="60" x="431" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="56" x="644" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="49" x="859" y="205" width="187" height="277"/>
+  <rect class="blocos" id="50" x="859" y="501" width="187" height="277"/>
+  <rect class="blocos" id="51" x="859" y="802" width="187" height="277"/>
+  <rect class="blocos" id="52" x="859" y="1099" width="187" height="277"/>
+
   <rect class="fil1 str0" x="1" y="1" width="1054" height="158"/>
-  <text x="83" y="115"  class="fil2 fnt0">Bloco </text>
-  <text x="466" y="115"  class="fil2 fnt0"> - Pequeno</text>
-  <text x="387" y="115"  class="fil2 fnt0">D</text>
-  <text x="873" y="401"  class="fil2 fnt1">01</text>
-  <text x="861" y="999"  class="fil2 fnt1">03</text>
-  <text x="861" y="1296"  class="fil2 fnt1">04</text>
-  <text x="646" y="999"  class="fil2 fnt1">07</text>
-  <rect class="fil0 str0" x="644" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="644" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="859" y="1099" width="187" height="277"/>
+  <text x="83" y="115"  class="fil2 fnt0">Bloco D - Pequeno </text>
+
   <text x="874" y="382"  class="fil2 fnt2">049</text>
   <text x="653" y="379"  class="fil2 fnt2">053</text>
   <text x="9" y="1274"  class="fil2 fnt2">068</text>
