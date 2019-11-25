@@ -49,31 +49,29 @@ viewBox="0 0 1056 1682"
  </defs>
  <g id="Camada_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <rect class="fil0 str0" x="102" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="317" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="102" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="317" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="102" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="317" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="102" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="317" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="532" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="745" y="205" width="187" height="277"/>
-  <rect class="fil0 str0" x="532" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="745" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="532" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="745" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="532" y="1099" width="187" height="277"/>
-  <rect class="fil0 str0" x="745" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="248" x="102" y="205" width="187" height="277"/>
+  <rect class="blocos" id="247" x="317" y="205" width="187" height="277"/>
+  <rect class="blocos" id="252" x="102" y="501" width="187" height="277"/>
+  <rect class="blocos" id="251" x="317" y="501" width="187" height="277"/>
+  <rect class="blocos" id="256" x="102" y="802" width="187" height="277"/>
+  <rect class="blocos" id="255" x="317" y="802" width="187" height="277"/>
+  <rect class="blocos" id="260" x="102" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="259" x="317" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="246" x="532" y="205" width="187" height="277"/>
+  <rect class="blocos" id="245" x="745" y="205" width="187" height="277"/>
+  <rect class="blocos" id="250" x="532" y="501" width="187" height="277"/>
+  <rect class="blocos" id="249" x="745" y="501" width="187" height="277"/>
+  <rect class="blocos" id="254" x="532" y="802" width="187" height="277"/>
+  <rect class="blocos" id="253" x="745" y="802" width="187" height="277"/>
+  <rect class="blocos" id="258" x="532" y="1099" width="187" height="277"/>
+  <rect class="blocos" id="257" x="745" y="1099" width="187" height="277"/>
   <rect class="fil1 str0" x="1" y="1" width="1054" height="158"/>
-  <text x="128" y="115"  class="fil2 fnt0">Bloco </text>
-  <text x="517" y="115"  class="fil2 fnt0"> - </text>
-  <text x="432" y="115"  class="fil2 fnt0">O</text>
-  <text x="615" y="115"  class="fil2 fnt0">Grande</text>
-  <text x="747" y="999"  class="fil2 fnt1">07</text>
-  <rect class="fil0 str0" x="745" y="501" width="187" height="277"/>
-  <rect class="fil0 str0" x="745" y="802" width="187" height="277"/>
-  <rect class="fil0 str0" x="745" y="1099" width="187" height="277"/>
+  <text x="128" y="115"  class="fil2 fnt0">Bloco O - Grande</text>
+  <rect class="blocos" id="264" x="102" y="1404" width="187" height="277"/>
+  <rect class="blocos" id="263" x="317" y="1404" width="187" height="277"/>
+  <rect class="blocos" id="262" x="532" y="1404" width="187" height="277"/>
+  <rect class="blocos" id="261" x="745" y="1404" width="187" height="277"/>
+
   <text x="754" y="379"  class="fil2 fnt2">245</text>
   <text x="110" y="1274"  class="fil2 fnt2">260</text>
   <text x="106" y="977"  class="fil2 fnt2">256</text>
@@ -90,11 +88,6 @@ viewBox="0 0 1056 1682"
   <text x="753" y="1274"  class="fil2 fnt2">257</text>
   <text x="753" y="977"  class="fil2 fnt2">253</text>
   <text x="754" y="676"  class="fil2 fnt2">249</text>
-  <rect class="fil0 str0" x="102" y="1404" width="187" height="277"/>
-  <rect class="fil0 str0" x="317" y="1404" width="187" height="277"/>
-  <rect class="fil0 str0" x="532" y="1404" width="187" height="277"/>
-  <rect class="fil0 str0" x="745" y="1404" width="187" height="277"/>
-  <rect class="fil0 str0" x="745" y="1404" width="187" height="277"/>
   <text x="114" y="1579"  class="fil2 fnt2">264</text>
   <text x="334" y="1579"  class="fil2 fnt2">263</text>
   <g transform="matrix(1.12537 0 0 1 -5195.12 492.291)">
