@@ -12,11 +12,10 @@
     <div class="nav-wrapper indigo darken-4">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
-            <li><a id="menu" href="home.php">Menu</a></li>
-        <li><a id="menu" href="aluno-armario.php">Comprar Armarios</a></li>
-        <li><a id="menu" href="sobre.php">Sobre</a></li>
-        <li><a id="menu" href="faq.php">FAQ</a></li>
-        <li><a id="menu" href="contato.php">Contatos</a></li>
+            <li><a id="menu" href="home.php " style="text-decoration:none">Menu</a></li>
+        <li><a id="menu" href="aluno-armario.php " style="text-decoration:none">Comprar Armarios</a></li>
+        <li><a id="menu" href="sobre.php " style="text-decoration:none">Sobre</a></li>
+        <li><a id="menu" href="faq.php " style="text-decoration:none">Enviar Duvidas</a></li>
       </ul>
     </div>
     </nav>

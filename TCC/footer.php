@@ -45,8 +45,6 @@
     <!-- Grid row-->
     <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
 
-    <!-- Grid row-->
-    <div class="row pb-3">
 
       <!-- Grid column -->
       <div class="col-md-12">
@@ -55,19 +53,19 @@
            <center>
           <!-- Facebook -->
           <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+            <i class="fab fa-facebook-f fa-lg white-text mr-4"> <b>Facebook/EtecLocker</b></i>
           </a>
           <!-- Twitter -->
           <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+            <i class="fab fa-twitter fa-lg white-text mr-4"> Twitter/EtecLocker </i>
           </a>
           <!-- Google +-->
           <a class="gplus-ic">
-            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> GooglePlus/EtecLocker</i>
           </a>
           <!--Instagram-->
           <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+            <i class="fab fa-instagram fa-lg white-text mr-4"> Instagram/EtecLocker</i>
           </a>
         </center>
 
@@ -76,16 +74,10 @@
       </div>
       <!-- Grid column -->
 
-    </div>
-    <!-- Grid row-->
-
   </div>
   <!-- Footer Links -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-  </div>
+
   <!-- Copyright -->
 
 </footer>
@@ -98,8 +90,10 @@
 
 <style type="text/css">
   
-  body{
-    height: 100px ;
+  .page-footer{
+    
+    margin-top: 13%;
+    height: 350px ;
   }
 
 

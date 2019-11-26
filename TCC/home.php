@@ -48,10 +48,10 @@ echo $_SESSION['nm_aluno']; ?>
           <center><i class="large material-icons">shopping_cart</i></center>
           </div>
           <div class="card-content">
-            <center><h4>Comprar Armairos<h4></center>
+            <center><h4>Reservar Armairos<h4></center>
                 <p><center>Aqui você pode adquirir o seu armario de maneira facil e rapida</center></p>
                  <div class="card-action">
-                <center><a href="aluno-armario.php">Comprar armario</a></center>
+                <center><a href="aluno-armario.php" style="text-decoration:none">Reservar armario</a></center>
                  </div>
 
           </div>
@@ -61,13 +61,13 @@ echo $_SESSION['nm_aluno']; ?>
       <div class="col s4 m4">
         <div class="card">
           <div class="card-image">
-           <center><i class="large material-icons">create</i></center>
+           <center><i class="large material-icons">visibility</i></center>
           </div>
           <div class="card-content">
-             <center><h4>Editar Perfil<h4></center>
+             <center><h4>Ver Armario<h4></center>
                   <p><center>Aqui você pode adquirir o seu armario de maneira facil e rapida</center></p>
                  <div class="card-action">
-                 <center><a href="#">Editar Perfil</a></center>
+                 <center><a href="#" style="text-decoration:none">Editar Perfil</a></center>
                  </div>
 
           </div>
@@ -83,7 +83,7 @@ echo $_SESSION['nm_aluno']; ?>
            <center><h4>Consultar Perfil<h4></center>
                 <p><center>Aqui você pode adquirir o seu armario de maneira facil e rapida</center></p>
                  <div class="card-action">
-                <center> <a href="#">Consultar Perfil</a></center>
+                <center> <a href="#" style="text-decoration:none">Consultar Perfil</a></center>
                  </div>
 
           </div>

@@ -39,10 +39,11 @@
   		<div class="col s4 m4">
   			<div class="card">
   				<div class="card-image">
-  					<img src="imagens/terra.jpg">
+  					<img src="imagens/luiz.jpg">
   				</div>
   				<div class="card-content">
-  					<p>Luiz Felipe Dos Santos</p>
+  					<h5><p>Luiz Felipe</p></h5>
+            <p>Front-end</p>
   				</div>
 
    			</div>
@@ -50,20 +51,22 @@
    		<div class="col s4 m4">
   			<div class="card">
   				<div class="card-image">
-  					<img src="imagens/terra.jpg">
+  					<img src="imagens/vitor.jpg">
   				</div>
   				<div class="card-content">
-  					<p>Vitor Almeida </p>
+  					<h5><p>Vitor Almeida </p></h5>
+            <p>Documentação</p>
    				</div>
    			</div>
    		</div>
    		<div class="col s4 m4">
   			<div class="card">
   				<div class="card-image">
-  					<img src="imagens/terra.jpg">
+  					<img src="imagens/aquino.jpg">
   				</div>
   				<div class="card-content">
-  					<p>Lucas de Aquino</p>
+  					<h5><p>Lucas de Aquino</p></h5>
+            <p>Back-end</p>
    				</div>
    			</div>
    		</div>
@@ -72,30 +75,33 @@
    		<div class="col s4 m4">
   			<div class="card">
   				<div class="card-image">
-  					<img src="imagens/terra.jpg">
+  					<img src="imagens/golias.jpg">
   				</div>
   				<div class="card-content">
-  					<p>João Pedro Nardes</p>
+  					<h5><p>João Pedro</p></h5>
+            <p>Banco de Dados</p>
    				</div>
    			</div>
    		</div>
    		<div class="col s4 m4">
   			<div class="card">
   				<div class="card-image">
-  					<img src="imagens/terra.jpg">
+  					<img src="imagens/ricardo.jpg">
   				</div>
   				<div class="card-content">
-  					<p>Pedro Ricardo</p>
+  					<h5><p>Pedro Ricardo</p></h5>
+            <p>Front-end<p>
    				</div>
    			</div>
    		</div>
    		<div class="col s4 m4">
   			<div class="card">
   				<div class="card-image">
-  					<img src="imagens/terra.jpg">
+  					<img src="imagens/jao.jpg">
   				</div>
   				<div class="card-content">
-  					<p>João Vitor acaccio</p>
+  					<h5><p>João Vitor </p></h5>
+            <p>Documentação</p>
    				</div>
    			</div>
    		</div>
@@ -110,13 +116,13 @@
 	
 #balao{
 
-width: 60%;
+width: 55%;
 transition: 1s;
 }
 
 #balao:hover{
 
-width: 70%;
+width: 60%;
 
 }
 

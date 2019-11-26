@@ -152,9 +152,7 @@ jQuery("input.telefone")
       height:100%;
       width:70%;
   }
-  #fundo{
-      background-image: radial-gradient(circle, #E0EEEE, #C1CDCD,#838B8B);
-}
+
   #cadastro{
       width: 600px;
       margin: 0 auto;

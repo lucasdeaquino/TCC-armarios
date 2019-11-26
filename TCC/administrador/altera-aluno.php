@@ -16,6 +16,10 @@
        
         <?php
         session_start();
+           if(empty($_SESSION['id_adm'])){
+            header('location: ../login.php');
+
+           }
 
        include('../conexao.php');
        
@@ -25,7 +29,7 @@
           
           $_SESSION['altera'] = $alterar;
        
-       echo $_SESSION['altera'];
+       
 
          $altera_sql = "SELECT tb_aluno.nm_aluno as 'nome', tb_aluno.cd_rm as 'rm', tb_aluno.ds_email as 'email', tb_aluno.ds_senha as 'senha', tb_turmas.nm_turmas as 'turma', tb_curso.nm_curso as 'curso', tb_turma_aluno.cd_turma_aluno as 'turmaluno' FROM tb_aluno
    inner join tb_turma_aluno on (tb_aluno.cd_rm = tb_turma_aluno.id_rm)
@@ -40,7 +44,7 @@
          
               $row = $exe_altera -> fetch_object(); 
 
-             echo $row ->nome.' '.$row ->rm.' '.$row ->email.' '.$row ->senha.' '.$row ->turma.' '.$row ->curso;
+     
 
              $_SESSION['turma_aluno'] = $row ->turmaluno;
     
@@ -50,10 +54,16 @@
 
         <br><br>
        
+     
+
        Nome: <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo"><br>
    Senha: <input type="password" name="senha" id="senha" placeholder="Digite a sua senha"><br>
     RM: &nbsp;&nbsp;&nbsp;<input type="text" maxlength="5" id="rm" onkeypress="return onlynumber();" placeholder="Digite seu RM"><br>
   Turma: <select name="turma" id="turma">
+
+
+
+
 
   	 <option>Selecionar</option>
 
@@ -80,10 +90,15 @@
 
 </select><br>
 
+
 Email : <input type="email" name="email" id="email"><br>
 Telefone: <input type="text" class="telefone" id="telefone" /><br>
 <input type="button" name="enviar" id="enviar" value="Alterar"><br>
 <a href="login.php">Fazer login</a>
+
+
+
+
 
     <script type="text/javascript">
 	
@@ -133,6 +148,13 @@ jQuery("input.telefone")
   });
 });
 </script>
+
+<style type="text/css">
+
+
+
+</style>
+
 
    </body>
 </html>
