@@ -24,41 +24,41 @@
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate nome">
+          <input id="first_name" type="text" class="validate nome" required>
           <label for="first_name">Nome</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate nome">
+          <input id="last_name" type="text" class="validate nome" required>
           <label for="last_name">Sobrenome</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate senha">
+          <input id="password" type="password" class="validate senha" required>
           <label for="password">Senha</label>
         </div>
       </div>
             <div class="row">
         <div class="input-field col s12">
-          <input id="rm" type="text" class="validate rm">
+          <input id="rm" type="text" class="validate rm" required>
           <label for="rm">RM</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate email">
+        <div class="input-field col s12" required>
+          <input id="email" type="email" class="validate email" required>
           <label for="email">Email</label>
         </div>
       </div>
             <div class="row">
         <div class="input-field col s12">
-          <input id="telefone" type="text" class="validate telefone">
+          <input id="telefone" type="text" class="validate telefone" required>
           <label for="telefone">Telefone</label>
         </div>
       </div>
       <label for="turma">Selecione sua turma:</label>
-  <select class="browser-default turma">
-    <option value="" disabled selected>Escolha a sua turma</option>
+  <select class="browser-default turma"required>
+    <option value="" disabled selected >Escolha a sua turma</option>
     <?php
  include('conexao.php');
   $consultarsala = "SELECT * from tb_turmas";

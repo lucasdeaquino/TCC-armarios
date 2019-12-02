@@ -12,10 +12,12 @@
     <div class="nav-wrapper indigo darken-4">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
-            <li><a id="menu" href="home.php " style="text-decoration:none">Menu</a></li>
+        <li><a id="menu" href="home.php " style="text-decoration:none">Menu</a></li>
         <li><a id="menu" href="aluno-armario.php " style="text-decoration:none">Comprar Armarios</a></li>
         <li><a id="menu" href="sobre.php " style="text-decoration:none">Sobre</a></li>
         <li><a id="menu" href="faq.php " style="text-decoration:none">Enviar Duvidas</a></li>
+        <li><a id="menu" href="ver-armario.php " style="text-decoration:none">Seu Armario</a></li>
+        <li><a id="menu" href="perfil-aluno.php " style="text-decoration:none"> Seu Perfil</a></li>
       </ul>
     </div>
     </nav>
@@ -25,7 +27,15 @@
 
 
 <style type="text/css">
+
+#nav{
+
+  position: fixed;
+  z-index: 999;
+}
+
 #menu{
+
 transition: 0.5s;
 }
 #menu:hover{
@@ -40,7 +50,7 @@ transition: 0.5s;
 
 
 #daora{
-margin-top:-5%; 
+margin-top:1%; 
 width: 30%;
 transition: 1s;
 }
