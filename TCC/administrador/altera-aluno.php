@@ -3,6 +3,14 @@
 <head>
 	<title>Alterar Aluno</title>
 	<meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -11,9 +19,7 @@
   <script src="../Js/cadastro-functions.js"></script>
  </head>
     <body>
-
-
-       
+<div id="cadastro"><div id="fundo"><br><div  class="z-depth-2"><div id="cadastro"><br><br>
         <?php
         session_start();
            if(empty($_SESSION['id_adm'])){
@@ -56,20 +62,19 @@
        
      
 
-       Nome: <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo"><br>
-   Senha: <input type="password" name="senha" id="senha" placeholder="Digite a sua senha"><br>
-    RM: &nbsp;&nbsp;&nbsp;<input type="text" maxlength="5" id="rm" onkeypress="return onlynumber();" placeholder="Digite seu RM"><br>
-  Turma: <select name="turma" id="turma">
+       <label>Nome:</label> <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo">
+   <label>Senha:</label> <input type="password" name="senha" id="senha" placeholder="Digite a sua senha">
+    <label>RM:</label> &nbsp;&nbsp;&nbsp;<input type="text" maxlength="5" id="rm" onkeypress="return onlynumber();" placeholder="Digite seu RM">
 
 
-
-
-
+ <div class="input-field col s12">
+    Turma: <select name="turma" id="turma">
   	 <option>Selecionar</option>
 
 <?php
+  
 
- include('conexao.php');
+include('conexao.php');
 
   $consultarsala = "SELECT * from tb_turmas";
       if(!$exesala = $mysqli -> query($consultarsala)){
@@ -87,14 +92,16 @@
 
 ?>
 
+ </select>
+  </div>
 
-</select><br>
 
+       
 
-Email : <input type="email" name="email" id="email"><br>
-Telefone: <input type="text" class="telefone" id="telefone" /><br>
-<input type="button" name="enviar" id="enviar" value="Alterar"><br>
-<a href="login.php">Fazer login</a>
+<label>Email :</label> <input type="email" name="email" id="email">
+<label>Telefone:</label> <input type="text" class="telefone" id="telefone"/><br>
+<center><button class="btn waves-effect waves-light indigo darken-3" type="button" name="enviar" id="enviar" value="Alterar">Alterar</button></center><br>
+<div id="cadastro1"><a href="login.php" >Fazer login</a></div><br><br>
 
 
 
@@ -148,13 +155,29 @@ jQuery("input.telefone")
   });
 });
 </script>
-
-<style type="text/css">
-
-
-
-</style>
-
-
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br><br>
    </body>
 </html>
+<style type="text/css">
+  
+    .z-depth-2{
+      width: 700px;
+      margin: 0 auto;
+      border-radius: 10%;
+      background-color: white;
+  }
+  #cadastro{
+      width: 80%;
+      margin: 0 auto;
+      border-radius: 500px;
+      background-color: white;
+  }
+  </style>
