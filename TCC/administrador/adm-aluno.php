@@ -20,6 +20,7 @@
 include('menu-adm.php');
  
  ?>
+<div id="cadastro"><div id="fundo"><br><div  class="z-depth-2"><div id="cadastro"><br><br>
 
       <div class="container">
      <script>  
@@ -196,5 +197,25 @@ AND tb_reserva.id_aluno2_reserva = tb_aluno.cd_rm )";
   </div>
 
     </div>
+</div>
+</div>
+</div>
+</div>
    </body>
  </html>
+ <style type="text/css">
+  
+    .z-depth-2{
+      width: 1230px;
+      margin: 0 auto;
+      border-radius: 10%;
+      background-color: white;
+  }
+  #cadastro{
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 500px;
+      background-color: white;
+  }
+
+  </style>

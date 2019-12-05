@@ -19,6 +19,22 @@
   <script src="../Js/cadastro-functions.js"></script>
  </head>
     <body>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta http-equiv= "Content-Type" content= "text/html; charset=iso-8859-1" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="estiloddw6.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<nav id="nav">
+    <div class="nav-wrapper indigo darken-4">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+      </ul>
+    </div>
+    </nav>
+
 <div id="cadastro"><div id="fundo"><br><div  class="z-depth-2"><div id="cadastro"><br><br>
         <?php
         session_start();
@@ -163,7 +179,21 @@ jQuery("input.telefone")
 </div>
 </div>
 </div>
-<br><br>
+<br>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta http-equiv= "Content-Type" content= "text/html; charset=iso-8859-1" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="estiloddw6.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<nav id="nav">
+    <div class="nav-wrapper indigo darken-4">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+      </ul>
+    </div>
+    </nav>
    </body>
 </html>
 <style type="text/css">
@@ -180,4 +210,32 @@ jQuery("input.telefone")
       border-radius: 500px;
       background-color: white;
   }
+
+#menu{
+
+transition: 0.5s;
+}
+#menu:hover{
+ color:#6495ED;
+}
+
+#etec{
+  margin-left: 740px;
+  margin-top: -3%;
+  width: 200px;
+}
+
+
+#daora{
+margin-top:1%; 
+width: 30%;
+transition: 1s;
+}
+
+#daora:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
   </style>

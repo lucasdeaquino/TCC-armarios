@@ -19,7 +19,21 @@
 </script>
 </head>
 <body>
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta http-equiv= "Content-Type" content= "text/html; charset=iso-8859-1" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="estiloddw6.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<nav id="nav">
+    <div class="nav-wrapper indigo darken-4">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+      </ul>
+    </div>
+    </nav>
+<br><br><br>
 		<?php
 
 include('../conexao.php');
@@ -32,7 +46,7 @@ $alterar = $_SESSION['alter'];
       $exe = $mysqli->query($select_armario);
         $row = $exe ->fetch_object();
  
- echo 'Número do armário: <input type="text" name="armario" id="armario" ><br>';
+ echo '<div id="cadastro"><div id="fundo"><br><div  class="z-depth-2"><div id="cadastro"><br><br><label>Número do armário:</label> <input type="text" name="armario" id="armario" ><br>';
 ?>
     
   <div class="input-field col s12">
@@ -77,7 +91,7 @@ $alterar = $_SESSION['alter'];
 
 	      while($row2 = $exe2->fetch_object()){
 
-       echo "<option value = ".$row2->cd_status.">".$row2->ds_status."</option>";
+       echo "<option value = ".$row2->cd_status.">".$row2->ds_status."</option></div</div></div></div>";
      }
   }
 
@@ -89,7 +103,7 @@ $alterar = $_SESSION['alter'];
    
 
 
-<button id="enviar">Alterar</button>
+<center><button class="btn waves-effect waves-light indigo darken-3" type="button" name="enviar" id="enviar" value="cadastrar">Alterar</button></center><br><br>
 
 
     <script type="text/javascript">
@@ -118,5 +132,48 @@ $alterar = $_SESSION['alter'];
   });
 });
 </script>
+
 </body>
+<style type="text/css">
+  
+    .z-depth-2{
+      width: 700px;
+      margin: 0 auto;
+      border-radius: 10%;
+      background-color: white;
+  }
+    #cadastro{
+      width: 80%;
+      margin: 0 auto;
+      border-radius: 500px;
+      background-color: white;
+  }
+  #menu{
+
+transition: 0.5s;
+}
+#menu:hover{
+ color:#6495ED;
+}
+
+#etec{
+  margin-left: 740px;
+  margin-top: -3%;
+  width: 200px;
+}
+
+
+#daora{
+margin-top:1%; 
+width: 30%;
+transition: 1s;
+}
+
+#daora:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+</style>
 </html>
